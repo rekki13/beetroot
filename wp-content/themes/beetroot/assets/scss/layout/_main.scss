@@ -1,0 +1,17 @@
+main {
+  z-index: 1;
+
+  .section {
+    height: auto;
+    padding: 200px 0;
+  }
+
+  @include media(md) {
+    padding-top: 120px;
+
+
+  }
+}
+
+
+

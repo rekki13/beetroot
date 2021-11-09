@@ -1,0 +1,54 @@
+/**
+ * css
+ */
+@import url('../css/plugins/font-awesome.css');
+@import url('../css/plugins/swiper.min.css');
+@import url('../css/plugins/jquery.fancybox.css');
+
+/**
+ * Variables
+ */
+@import "base/variables";
+
+/**
+ * Mixins
+ */
+@import "base/mixins";
+
+/**
+ * Global
+ */
+@import "base/fonts";
+@import "base/normalize";
+@import "base/utilities";
+@import "base/base";
+
+/**
+ * Modules
+ */
+@import "modules/btn";
+@import "modules/form";
+@import "modules/swiper";
+@import "modules/text";
+@import "modules/popup";
+
+/**
+ * Content
+ */
+@import "layout/header";
+@import "layout/main";
+@import "layout/footer";
+@import "layout/sections/background";
+@import "layout/sections/sidebar";
+@import "layout/sections/page-title";
+/**
+ * Pages
+ */
+@import "pages/home/index";
+@import "pages/404";
+
+/**
+
+ * Bootstrap
+ */
+@import "../../node_modules/bootstrap/scss/bootstrap";

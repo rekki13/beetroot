@@ -1,0 +1,170 @@
+.popup {
+  max-width: 999px;
+  padding: 60px 0 0 0;
+  position: relative;
+  z-index: 1;
+  background-color: transparent;
+  overflow: unset;
+
+  &::after,
+  &::before {
+    content: '';
+    display: block;
+    position: absolute;
+    z-index: -1;
+    height: 170px;
+    top: 0px;
+    box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.25);
+  }
+
+  &::after {
+    //background-color: $color-red;
+    width: 60%;
+    right: 0;
+    @include media(sm) {
+      width: 35%;
+    }
+
+  }
+  &::before {
+    //background-color: $color-yellow-light;
+    border-radius: 80px 0px 0px 0px;
+    right: 60%;
+    width: 150px;
+    @include media(sm) {
+      right: 35%;
+    }
+  }
+
+  &__title {
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 1.5;
+    text-transform: uppercase;
+    //color: $color-red;
+    margin: 0 0 5px 0;
+    @include media(xs) {
+      font-size: 32px;
+    }
+  }
+
+  &__subtitle {
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 40px;
+    text-transform: uppercase;
+    //color: $color-blue-light;
+    margin: 0 0 30px 0;
+    @include media(xs) {
+      font-size: 24px;
+    }
+
+    * {
+      padding: 0;
+      margin: 0;
+    }
+  }
+
+  &__content {
+    background-color: #fff;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 0px 100px 0px 50px;
+    padding: 85px 80px;
+    position: relative;
+    z-index: 2;
+    @include media(md) {
+      padding: 40px 30px;
+    }
+
+    &::after,
+    &::before {
+      content: '';
+      display: block;
+      position: absolute;
+      z-index: 3;
+    }
+
+    &::after {
+      height: 100%;
+      max-height: 380px;
+      left: 0;
+      width: 12px;
+      //background-color: $color-blue-light;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    &::before {
+      width: 60%;
+      max-width: 380px;
+      height: 12px;
+      right: 0;
+      bottom: 0;
+      //background-color: $color-red;
+    }
+
+  }
+
+  .fancybox {
+    &-close {
+      &-small {
+        $size: 80px;
+
+        width: $size;
+        height: $size;
+        background: #00AABA url('../images/popup-close.svg') center center no-repeat;
+        background-size: 40%;
+        border-radius: 50%;
+        border: 2px solid #fff;
+        color: #fff;
+        opacity: 1;
+        right: -20px;
+        top: -20px;
+        box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.25);
+        @include media(xs) {
+          $size: 50px;
+          width: $size;
+          height: $size;
+          right: 10px;
+          top: 10px;
+        }
+
+        svg {
+          display: none;
+        }
+      }
+    }
+  }
+
+  &__heart {
+    position: absolute;
+    z-index: 4;
+    bottom: -50px;
+    right: 20px;
+    width: 200px;
+    @include media(sm) {
+      display: none;
+    }
+  }
+
+  &__footer {
+    padding: 40px 0 0 0;
+  }
+
+
+}
+
+.fancybox {
+  &-bg {
+    background: rgba(255, 255, 255, 0.66);
+    opacity: 1 !important;
+  }
+  &-slide {
+    &--html {
+      padding: 60px;
+      @include media(lg) {
+        padding: 30px;
+      }
+    }
+  }
+}

@@ -1,0 +1,45 @@
+.home {
+
+  &__slider {
+
+
+    @include media(md) {
+      display: none;
+    }
+
+    &-item {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 104px;
+      font-size: 24px;
+      line-height: 1.2;
+    }
+
+    &-carousel {
+      position: relative;
+      padding: 0 100px;
+    }
+
+    .swiper {
+
+      &-button {
+
+        &-prev {
+
+        }
+
+        &-next {
+
+        }
+
+      }
+
+      &-container {
+
+
+      }
+    }
+
+  }
+}

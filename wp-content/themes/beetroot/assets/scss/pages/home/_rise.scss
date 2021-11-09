@@ -1,0 +1,203 @@
+.home {
+
+  &__rise {
+    margin: 0 0 0px 0;
+
+    @include media(md) {
+      margin: 0;
+    }
+
+    &-top {
+      background: linear-gradient(93.46deg, $color-blue-light -13.31%, $color-blue 44.85%);
+      padding: 0;
+      @include media(md) {
+        margin: 0;
+
+      }
+    }
+
+    &-bottom {
+      padding-top: 30px;
+      margin-bottom: 30px;
+
+      @include media(md) {
+        display: none;
+
+      }
+    }
+
+    &-row {
+      $img-width: 600px;
+      $img-width-md: 400px;
+
+      display: flex;
+
+      @include media(md) {
+        flex-direction: column-reverse;
+      }
+
+      &-left {
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        width: $img-width;
+
+        @include media(lg) {
+          width: $img-width-md;
+        }
+        @include media(md) {
+          width: 100%;
+        }
+
+        img {
+          @include media(lg) {
+            max-width: 140%;
+            position: relative;
+            right: -40px;
+          }
+          @include media(md) {
+            right: 0;
+          }
+        }
+      }
+
+      &-right {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        width: calc(100% - #{$img-width});
+        padding: 70px 0 70px 120px;
+        overflow: hidden;
+        @include media(lg) {
+          width: calc(100% - #{$img-width-md});
+          padding: 70px 0 70px 150px;
+        }
+        @include media(md) {
+          padding: 0 15px;
+          width: 100%;
+        }
+      }
+
+      &-title {
+        font-weight: normal;
+        font-size: 144px;
+        line-height: 1.2;
+        color: #fff;
+        font-family: $font-title;
+        position: relative;
+        z-index: 1;
+        display: inline-block;
+
+        @include media(lg) {
+          font-size: 120px;
+        }
+        @include media(md) {
+          font-size: 140px;
+        }
+
+
+        &.figure {
+          &::after {
+            $size: 128px;
+            $size-md: 100px;
+
+            content: '';
+            display: block;
+            position: absolute;
+            z-index: -1;
+            width: $size;
+            height: $size;
+            border-radius: 50%;
+            background-color: $color-yellow-light;
+            top: 200px;
+
+            right: -30px;
+            transition: all 1s ease-in-out;
+
+            @include media(lg) {
+              width: $size-md;
+              height: $size-md;
+            }
+            @include media(md) {
+              top: 200%;
+              right: -70px;
+            }
+
+          }
+        }
+
+        &.scrolled {
+          &::after {
+            top: 10px;
+          }
+        }
+      }
+
+      &-excerpt {
+        color: #fff;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 1.5;
+        position: relative;
+        z-index: 2;
+        @include media(md) {
+          font-size: 18px;
+          line-height: 1.5;
+          letter-spacing: -0.06em;
+        }
+      }
+    }
+
+    &-taglist {
+      display: flex;
+      flex-wrap: wrap;
+      width: auto;
+      color: $color-gray-light;
+
+      > li {
+        display: flex;
+        align-items: center;
+        font-weight: normal;
+        font-size: 28px;
+        text-transform: uppercase;
+        margin: 0 15px 18px 0;
+
+        span {
+          color: $color-gray-light;
+          text-decoration: none;
+          display: flex;
+          align-items: center;
+          position: relative;
+          z-index: 1;
+        }
+
+        &.selected {
+
+          span {
+            padding: 10px 17px;
+            color: #fff;
+            margin: 0;
+
+            &::after {
+              content: '';
+              display: block;
+              position: absolute;
+              z-index: -1;
+              background-color: $color-yellow-light;
+              border-top-right-radius: 10px;
+              top: -5px;
+              bottom: 0;
+              left: 0;
+              right: 0;
+            }
+
+          }
+
+        }
+      }
+    }
+
+  }
+
+}

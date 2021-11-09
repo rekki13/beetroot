@@ -1,0 +1,64 @@
+.swiper {
+
+  &-button {
+    $size: 80px;
+
+    width: $size;
+    height: $size;
+    border-radius: 50%;
+    //border: 2px solid $color-red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.12s linear;
+
+    svg {
+      path {
+        transition: all 0.12s linear;
+      }
+    }
+
+    &:hover {
+      //background-color: $color-red;
+      //border-color: $color-red;
+
+      svg {
+        path {
+          fill: #fff;
+        }
+      }
+    }
+
+    &-prev {
+
+    }
+
+    &-next {
+
+    }
+
+    &-disabled {
+      opacity: 0.25;
+    }
+
+    &.absolute {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+
+      &.swiper{
+        &-button-prev {
+          left: 0;
+        }
+        &-button-next {
+          right: 0;
+        }
+      }
+    }
+
+  }
+
+}
+
+
