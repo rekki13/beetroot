@@ -1,0 +1,22 @@
+.home {
+
+  &__socials {
+    background-color: $background-grey;
+
+  }
+
+  .socials {
+    &__left {
+
+    }
+
+    &__right {
+      li {
+        padding: 0;
+        a{
+          padding: 0;
+        }
+      }
+    }
+  }
+}

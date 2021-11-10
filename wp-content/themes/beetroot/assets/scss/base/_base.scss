@@ -25,19 +25,21 @@ html {
     height: 100%;
 }
 a {
-    color: $color-link;
-    text-decoration: none;
+    color: $color-pink;
+    text-decoration: none!important;
     outline: none !important;
     position: relative;
 }
 a:hover {
     text-decoration: none;
-    color: $color-link;
+    color: $color-pink;
     border-bottom-color: transparent;
+    opacity: .5;
+    transition: .3s;
 }
 a:active, a:visited {
     text-decoration: none !important;
-    color: $color-link;
+    color: $color-pink;
     border-bottom-color: transparent;
 }
 ol, ul {
@@ -77,7 +79,7 @@ img{
 .wrapper {
     flex: 1 0 auto;
     background: #fff url('../images/main_bottom_background.png') left calc(100% + 1px) no-repeat;
-    padding: 0 0 50px 0;
+    padding: 0;
 
     @include media(sm) {
 

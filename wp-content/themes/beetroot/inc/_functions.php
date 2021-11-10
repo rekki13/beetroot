@@ -144,3 +144,30 @@ function beetroot_init() {
 }
 
 add_action( 'init', 'beetroot_init' );
+
+function add_additional_class_on_li($classes, $item, $args) {
+	if(isset($args->add_li_class)) {
+		$classes[] = $args->add_li_class;
+	}
+	return $classes;
+}
+add_filter('nav_menu_css_class', 'add_additional_class_on_li', 1, 3);
+function add_menu_link_class( $atts, $item, $args ) {
+	if (property_exists($args, 'link_class')) {
+		$atts['class'] = $args->link_class;
+	}
+	return $atts;
+}
+add_filter( 'nav_menu_link_attributes', 'add_menu_link_class', 1, 3 );
+
+
+add_filter( 'get_custom_logo', 'change_logo_class' );
+
+
+function change_logo_class( $html ) {
+
+	$html = str_replace( 'custom-logo', 'your-custom-class bi me-2', $html );
+	$html = str_replace( 'your-custom-class-link', 'd-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none', $html );
+
+	return $html;
+}

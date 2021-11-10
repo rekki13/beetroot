@@ -1,4 +1,52 @@
 .form {
+  .position-label {
+    position: absolute;
+  }
+
+  .form-group {
+  }
+
+  .form-control {
+    padding: 0;
+    border-bottom-color: $border-bottom !important;
+  }
+
+  .form-files {
+    .btn {
+      font-size: 14px;
+      color: $color-pink;
+      height: auto;
+    }
+  }
+
+  .btn-check:checked + .btn {
+    background-color: $border-pink !important;
+
+  }
+
+  .form-check {
+
+    &-label {
+      border-radius: 3px;
+      height: 16px;
+      width: 16px;
+      padding: 0;
+      border: $border-pink;
+    }
+
+    label {
+      color: $color-gray;
+    }
 
 
+  }
+
+  .required {
+    color: $color-pink;
+  }
+
+  .submit {
+    background-color: $border-pink !important;
+    border-radius:30px;
+  }
 }
