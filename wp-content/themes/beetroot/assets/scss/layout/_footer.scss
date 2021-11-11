@@ -1,5 +1,9 @@
 .footer {
+  margin-top: -1.9%;
+  z-index: 10;
   background-color: $color-footer;
+  clip-path: polygon(0 10%, 100% 0%, 100% 100%, 0% 100%);
+
 }
 
 

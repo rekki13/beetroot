@@ -8,8 +8,10 @@ defined( 'ABSPATH' ) || exit;
 /**
  * Socials
  */
-$field = get_query_var( 'home_field' );
-$title = $field['title'];
+$field     = get_query_var( 'home_field' );
+$title     = $field['title'];
+$socials_checkbox = $field['socials_checkbox'];
+$alt_color=$field['alternative_colors'];
 //print_r($field);
 ?>
 <!-- Home Socials -->
@@ -26,16 +28,11 @@ $title = $field['title'];
                     <div class="col-3 socials__right ">
                         <ul class="list-group list-group-horizontal h-100">
 							<?php
-							foreach ( $field as $row ) :
-								foreach ( $row as $social ):
-									echo( '<li class="p-0">' );
-									echo( '<a href="' . $social ['link']['url']
-									      . '"class="btn p-0" ><img src="'
-									      .$social ['icon']['url']. '" alt='
-									      . $social ['icon']['alt'] . '></a>' );
-									echo( '</li>' );
-								endforeach;
-							endforeach;
+							if ( $socials_checkbox ):
+								$param = ['social_name'=>$socials_checkbox,'alt_colors' =>$alt_color];
+                                get_template_part( 'template-parts/parts/_part-page',
+											'socials',$param );
+							endif;
 							?>
                         </ul>
                     </div>

@@ -1,6 +1,55 @@
-.home{
+.home {
 
-  &__benefits{
+  &__benefits {
     background-color: $background-grey;
+
+
+  }
+
+  .row {
+    &__benefits {
+
+      svg, img {
+        width: 100%;
+        height: 100%;
+      }
+
+      .benefit {
+        //background-color: red;
+
+        &:first-child {
+          background-color: yellow;
+
+        }
+      }
+
+      .benefit {
+        &:nth-child(2) {
+          svg {
+            fill: $icon-yellow;
+          }
+        }
+
+        &:nth-child(3) {
+          svg {
+            fill: $icon-green;
+          }
+        }
+
+        &:nth-child(4) {
+          svg {
+
+            fill: $icon-salt;
+          }
+        }
+
+        &:nth-child(5) {
+          svg {
+            fill: $icon-pink;
+          }
+        }
+      }
+    }
+
   }
 }

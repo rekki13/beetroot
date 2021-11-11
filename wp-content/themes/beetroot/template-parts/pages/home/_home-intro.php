@@ -27,7 +27,6 @@ $intro_columns = $field['columns'];
                     <h1><?= $title ?></h1>
                     <p><?= $text ?></p>
 
-
 					<?php
 					$i = 0;
 					foreach ( $intro_columns as $row ) :
@@ -38,7 +37,8 @@ $intro_columns = $field['columns'];
 							switch ( 'col_' . $i ) :
 								case "col_1":
 									$button = $row[ $i . '_button_info' ]; ?>
-                                    <a href="<?= $button['url'] ?>"><?= $button['title'] ?></a> <?php
+                                    <a href="<?= $button['url'] ?>"
+                                       class="btn"><?= $button['title'] ?></a> <?php
 
 									break;
 								case "col_2":
@@ -46,15 +46,27 @@ $intro_columns = $field['columns'];
 									echo( '<p>' . $text . '</p>' );
 									break;
 								case "col_3" or "col_4"  :
-									foreach ( $row as $icons ) :
-										foreach ( $icons as $icon ) :
-											foreach ( $icon as $info ) :
-												echo( '<img src="'
-												      . $info['url'] . '" alt="'
-												      . $info['alt'] . '">' );
+									?>
+                                    <ul class="list-group list-group-horizontal h-100">
+										<?php
+										foreach ( $row as $icons ) :
+											foreach ( $icons as $icon ) :
+												foreach ( $icon as $info ) :
+													echo( '<li class="p-0">' );
+
+													echo( '<img src="'
+													      . $info['url']
+													      . '" alt="'
+													      . $info['alt']
+													      . '">' );
+													echo( '</li>' );
+
+												endforeach;
 											endforeach;
 										endforeach;
-									endforeach;
+										?>
+                                    </ul>
+									<?php
 									break;
 							endswitch;
 							?>

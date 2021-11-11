@@ -1,0 +1,36 @@
+.swiper-testimonials {
+
+  position: absolute;
+  right: 5%;
+  top: 25%;
+  width: 40%;
+
+  .swiper-slide {
+
+    .icon {
+      width: 50%;
+
+      svg {
+        width: 70%;
+      }
+
+
+    }
+
+    .icon-quote {
+      svg {
+        fill: $icon-quote-yellow;
+      }
+    }
+
+    .icon-arrow {
+      width: 15%;
+
+      svg {
+
+        fill: $icon-arrow-pink;
+      }
+    }
+  }
+
+}

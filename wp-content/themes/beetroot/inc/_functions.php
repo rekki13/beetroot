@@ -171,3 +171,27 @@ function change_logo_class( $html ) {
 
 	return $html;
 }
+
+function cc_mime_types($mimes) {
+	$mimes['svg'] = 'image/svg+xml';
+	return $mimes;
+}
+add_filter('upload_mimes', 'cc_mime_types');
+function fix_svg_thumb_display() {
+	echo 'td.media-icon img[src$=".svg"], img[src$=".svg"].attachment-post-thumbnail { width: 100% !important; height: auto !important; }';
+}
+add_action('admin_head', 'fix_svg_thumb_display');
+
+
+function icons_alternative_color($svg){
+	$dom = new DOMDocument();
+	$dom->loadHTML( $svg );
+	foreach (
+		$dom->getElementsByTagName( 'svg' ) as $element
+	) {
+		$element->setAttribute( 'class', $icon['title'] );
+	}
+	$dom->saveHTML();
+	$svg = $dom->saveHTML();
+	return $svg;
+}

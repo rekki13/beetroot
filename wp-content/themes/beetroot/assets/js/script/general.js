@@ -45,6 +45,24 @@ const HomePage = function () {
     /**
      * Init
      */
+
+    const Slider = function () {
+
+        const swiperBottom = new Swiper('.swiper-testimonials.swiper-container', {
+            spaceBetween: 0,
+            slidesPerView: 1,
+            slidesPerGroup: 1,
+            loop: true,
+            navigation: {
+                nextEl: '.home__slider .swiper-button-next',
+                prevEl: '.home__slider .swiper-button-prev',
+            },
+            autoplay: {
+                delay: 1000000,
+            },
+        });
+
+    }
     $(document).on('click', '.buttonFiles', function (e) {
         // $('.googleDrive').append("<p>list item</p>");
         $('<input type="url" class="custom-file-input form-control" placeholder="'+$(this).attr("data-placeholder")+'">').insertAfter($(this));
@@ -65,6 +83,18 @@ const HomePage = function () {
         }
     });
 
+
+
+
+
+    /**
+     * Init
+     */
+    return {
+        init: function () {
+            Slider();
+        }
+    };
 }();
 
 /**

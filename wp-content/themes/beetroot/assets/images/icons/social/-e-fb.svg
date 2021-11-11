@@ -1,0 +1,19 @@
+<svg id="_-e-fb" data-name="-e-fb" xmlns="http://www.w3.org/2000/svg" width="76" height="76" viewBox="0 0 76 76">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #3b5998;
+      }
+
+      .cls-1, .cls-2 {
+        fill-rule: evenodd;
+      }
+
+      .cls-2 {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <path id="_-e-button4" data-name="-e-button4" class="cls-1" d="M1854.5,5642c-17.19.22-37.99,10.2-38.67,36.91s17.85,39.29,40.03,39.08c0.85-.01-1.24-0.03-0.4-0.07,21.73-1.04,37.12-12.93,36.35-40.31-0.65-22.7-19.47-34.63-37.45-35.56C1853.42,5642.01,1855.43,5641.99,1854.5,5642Z" transform="translate(-1815.84 -5642)"/>
+  <path id="_-e-facebook" data-name="-e-facebook" class="cls-2" d="M1857.19,5698.05v-15.6h5.31l0.8-6.08h-6.11v-3.88c0-1.76.49-2.96,3.05-2.96h3.27v-5.44a42.535,42.535,0,0,0-4.76-.24c-4.71,0-7.93,2.83-7.93,8.04v4.48h-5.33v6.08h5.33v15.6h6.37Z" transform="translate(-1815.84 -5642)"/>
+</svg>
