@@ -2,33 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="90ffef3f-5a87-4b97-9767-8d558575fe14" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/wp-content/themes/beetroot/assets/scss/pages/vacancies/_contact_us.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/themes/beetroot/assets/scss/pages/vacancies/_join_the_team.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/themes/beetroot/assets/scss/pages/vacancies/index.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/themes/beetroot/inc/_widgets.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/themes/beetroot/page-vacancies.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/themes/beetroot/template-parts/pages/vacancies/_vacancies-join_the_team.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/themes/beetroot/template-parts/parts/footer/col-1.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/themes/beetroot/template-parts/parts/footer/col-2.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/themes/beetroot/template-parts/parts/footer/col-3.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/themes/beetroot/template-parts/parts/footer/col-4.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/beetroot/assets/css/bundle.css" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/beetroot/assets/css/bundle.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/beetroot/assets/images/icons/e-arrows.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/beetroot/assets/scss/base/_base.scss" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/beetroot/assets/scss/base/_base.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/beetroot/assets/scss/base/_variables.scss" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/beetroot/assets/scss/base/_variables.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/beetroot/assets/scss/general.scss" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/beetroot/assets/scss/general.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/beetroot/assets/scss/layout/_footer.scss" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/beetroot/assets/scss/layout/_footer.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/beetroot/assets/scss/layout/_header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/beetroot/assets/scss/layout/_header.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/beetroot/assets/scss/layout/_main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/beetroot/assets/scss/layout/_main.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/beetroot/inc/_custom-footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/beetroot/inc/_custom-footer.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/beetroot/inc/_custom-header.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/beetroot/inc/_custom-header.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wp-content/themes/beetroot/inc/_functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/beetroot/inc/_functions.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/beetroot/inc/post-types.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/beetroot/inc/post-types.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/beetroot/inc/shortcodes.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/beetroot/inc/shortcodes.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/beetroot/inc/sidebar.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/beetroot/inc/sidebar.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/beetroot/template-parts/pages/home/_home-socials.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/beetroot/template-parts/pages/home/_home-socials.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/beetroot/template-parts/parts/_part-page-socials.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/beetroot/template-parts/parts/_part-page-socials.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -99,7 +73,7 @@
       <workItem from="1636620769865" duration="559000" />
       <workItem from="1636621541628" duration="9386000" />
       <workItem from="1636633604994" duration="3879000" />
-      <workItem from="1636639315852" duration="44295000" />
+      <workItem from="1636639315852" duration="44458000" />
     </task>
     <task id="LOCAL-00001" summary="created pro">
       <created>1636465663388</created>
@@ -136,7 +110,14 @@
       <option name="project" value="LOCAL" />
       <updated>1636670662676</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="header, footer, join us">
+      <created>1636728691912</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1636728691913</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -147,7 +128,8 @@
     <MESSAGE value="created project and some settings" />
     <MESSAGE value="Create home page almost full" />
     <MESSAGE value="Full home page by functions" />
-    <option name="LAST_COMMIT_MESSAGE" value="Full home page by functions" />
+    <MESSAGE value="header, footer, join us" />
+    <option name="LAST_COMMIT_MESSAGE" value="header, footer, join us" />
   </component>
   <component name="WindowStateProjectService">
     <state x="184" y="109" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1636720899608">
@@ -158,10 +140,10 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="467" y="309" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1440.900@0.0.1440.900" timestamp="1636622407366" />
-    <state x="292" y="25" key="CommitChangelistDialog2" timestamp="1636670658335">
+    <state x="292" y="25" key="CommitChangelistDialog2" timestamp="1636728687965">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="292" y="25" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1636670658335" />
+    <state x="292" y="25" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1636728687965" />
     <state width="1398" height="245" key="GridCell.Tab.0.bottom" timestamp="1636455453628">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
