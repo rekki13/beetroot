@@ -5,6 +5,10 @@ main {
     height: auto;
     padding: 100px 0;
 
+    &--last {
+      padding-bottom: 120px;
+      margin-bottom: -20px;
+    }
   }
 
   @include media(md) {

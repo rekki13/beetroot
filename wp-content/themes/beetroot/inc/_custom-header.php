@@ -19,7 +19,7 @@ function beetroot_header_TagHeaderOpen() {
 add_action( 'header_parts', 'beetroot_header_TagHeaderInner', 20 );
 function beetroot_header_TagHeaderInner() {
 	?>
-        <header class="d-flex flex-wrap justify-content-between py-3 mb-4">
+        <header class="d-flex flex-wrap justify-content-between header py-3">
 
 	        <?= the_custom_logo() ?>
 

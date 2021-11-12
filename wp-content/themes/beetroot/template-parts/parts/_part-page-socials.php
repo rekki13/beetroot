@@ -22,10 +22,10 @@ if ( have_rows( 'socials', 'theme_settings' ) ):
 					if ( $alt_color ):
 						$svg = file_get_contents( $icon_alt['url'] );
 						icons_alternative_color( $svg );
-
 					else:
 						$svg = file_get_contents( $icon['url'] );
 						icons_alternative_color( $svg );
+
 					endif;
 					echo( '<a href="' . $link . '" target="_blank">' . $svg
 					      . '</a>' );

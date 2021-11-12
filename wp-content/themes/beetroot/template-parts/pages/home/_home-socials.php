@@ -12,10 +12,9 @@ $field     = get_query_var( 'home_field' );
 $title     = $field['title'];
 $socials_checkbox = $field['socials_checkbox'];
 $alt_color=$field['alternative_colors'];
-//print_r($field);
 ?>
 <!-- Home Socials -->
-<section class="home__socials section">
+<section class="home__socials  section section--last">
 
     <!-- container -->
     <div class="container">
@@ -26,7 +25,7 @@ $alt_color=$field['alternative_colors'];
                         <h2><?= $title ?></h2>
                     </div>
                     <div class="col-3 socials__right ">
-                        <ul class="list-group list-group-horizontal h-100">
+                        <ul class="list-group list-group-horizontal  h-100 <?=$alt_color?'alt-colors':'regular-colors'?>">
 							<?php
 							if ( $socials_checkbox ):
 								$param = ['social_name'=>$socials_checkbox,'alt_colors' =>$alt_color];
