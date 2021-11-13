@@ -2,7 +2,34 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="90ffef3f-5a87-4b97-9767-8d558575fe14" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/beetroot/assets/images/icons/e-grid.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/beetroot/assets/images/icons/e-list.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/beetroot/assets/images/icons/e-location.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/beetroot/template-parts/pages/vacancies/_vacancies-contact_us.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/beetroot/template-parts/parts/vacancies/vacansy-list.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/beetroot/assets/css/bundle.css" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/beetroot/assets/css/bundle.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/beetroot/assets/images/left_menu_arrow_red.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/beetroot/assets/images/left_menu_arrow_yellow.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/beetroot/assets/images/logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/beetroot/assets/images/logo.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/beetroot/assets/images/logo_white.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/beetroot/assets/images/main_bottom_background.png" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/beetroot/template-parts/parts/vacancies/vacancy-grid.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/beetroot/assets/images/no-photo.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/beetroot/assets/images/popup-close.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/beetroot/assets/images/popup-heart.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/beetroot/assets/js/bundle.js" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/beetroot/assets/js/bundle.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/beetroot/assets/js/script/general.js" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/beetroot/assets/js/script/general.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/beetroot/assets/scss/base/_base.scss" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/beetroot/assets/scss/base/_base.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/beetroot/assets/scss/pages/vacancies/_contact_us.scss" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/beetroot/assets/scss/pages/vacancies/_contact_us.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/beetroot/assets/scss/pages/vacancies/_join_the_team.scss" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/beetroot/assets/scss/pages/vacancies/_join_the_team.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/beetroot/inc/_acf.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/beetroot/inc/_acf.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wp-content/themes/beetroot/inc/_functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/beetroot/inc/_functions.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/beetroot/inc/_script-style.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/beetroot/inc/_script-style.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/beetroot/inc/post-types.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/beetroot/inc/post-types.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/beetroot/template-parts/pages/home/_home-privilege.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/beetroot/template-parts/pages/home/_home-privilege.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/beetroot/template-parts/pages/vacancies/_vacancies-join_the_team.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/beetroot/template-parts/pages/vacancies/_vacancies-join_the_team.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/beetroot/template-parts/parts/_part-page-testimonials.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/beetroot/template-parts/parts/_part-page-testimonials.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,6 +44,8 @@
       <list>
         <option value="Sass File" />
         <option value="SCSS File" />
+        <option value="HTML File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -37,9 +66,10 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/wp-content/themes/beetroot/inc" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/wp-content/themes/beetroot/assets/images/icons" />
     <property name="list.type.of.created.stylesheet" value="SCSS" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="run.code.analysis.last.selected.profile" value="aDefault" />
@@ -47,15 +77,16 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/wp-content/themes/beetroot/inc" />
-      <recent name="$PROJECT_DIR$/wp-content/themes/beetroot/template-parts/pages/home" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/wp-content/themes/beetroot/assets/images/icons/social" />
       <recent name="$PROJECT_DIR$/wp-content/themes/beetroot/assets/images/icons" />
       <recent name="$PROJECT_DIR$/wp-content/themes/beetroot/template-parts/parts/forms" />
       <recent name="$PROJECT_DIR$/wp-content/themes/beetroot/template-parts/parts/forms/inputs" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/wp-content/themes/beetroot/assets/images/icons" />
+      <recent name="$PROJECT_DIR$/wp-content/themes/beetroot/inc" />
+      <recent name="$PROJECT_DIR$/wp-content/themes/beetroot/template-parts/pages/home" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -73,7 +104,8 @@
       <workItem from="1636620769865" duration="559000" />
       <workItem from="1636621541628" duration="9386000" />
       <workItem from="1636633604994" duration="3879000" />
-      <workItem from="1636639315852" duration="44458000" />
+      <workItem from="1636639315852" duration="47178000" />
+      <workItem from="1636798211448" duration="43715000" />
     </task>
     <task id="LOCAL-00001" summary="created pro">
       <created>1636465663388</created>
@@ -117,7 +149,14 @@
       <option name="project" value="LOCAL" />
       <updated>1636728691913</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="remove svg">
+      <created>1636728750405</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1636728750406</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -129,7 +168,8 @@
     <MESSAGE value="Create home page almost full" />
     <MESSAGE value="Full home page by functions" />
     <MESSAGE value="header, footer, join us" />
-    <option name="LAST_COMMIT_MESSAGE" value="header, footer, join us" />
+    <MESSAGE value="remove svg" />
+    <option name="LAST_COMMIT_MESSAGE" value="remove svg" />
   </component>
   <component name="WindowStateProjectService">
     <state x="184" y="109" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1636720899608">
@@ -140,10 +180,14 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="467" y="309" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1440.900@0.0.1440.900" timestamp="1636622407366" />
-    <state x="292" y="25" key="CommitChangelistDialog2" timestamp="1636728687965">
+    <state x="292" y="25" key="CommitChangelistDialog2" timestamp="1636728749550">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="292" y="25" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1636728687965" />
+    <state x="292" y="25" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1636728749550" />
+    <state x="150" y="78" key="DiffContextDialog" timestamp="1636728736739">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="150" y="78" key="DiffContextDialog/0.0.1440.900@0.0.1440.900" timestamp="1636728736739" />
     <state width="1398" height="245" key="GridCell.Tab.0.bottom" timestamp="1636455453628">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
@@ -160,44 +204,45 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state width="1398" height="245" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1636455453628" />
-    <state x="540" y="377" key="NewPhpFileDialog" timestamp="1636726606775">
+    <state x="540" y="377" key="NewPhpFileDialog" timestamp="1636830668611">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="540" y="377" key="NewPhpFileDialog/0.0.1440.900@0.0.1440.900" timestamp="1636726606775" />
+    <state x="540" y="377" key="NewPhpFileDialog/0.0.1440.900@0.0.1440.900" timestamp="1636830668611" />
     <state x="229" y="86" key="SettingsEditor" timestamp="1636561131588">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="229" y="86" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1636561131588" />
-    <state x="320" y="187" key="Vcs.Push.Dialog.v2" timestamp="1636670678292">
+    <state x="320" y="187" key="Vcs.Push.Dialog.v2" timestamp="1636728755200">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="320" y="187" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1636670678292" />
+    <state x="320" y="187" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1636728755200" />
     <state x="28" y="77" width="1307" height="720" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1636539153739">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="28" y="77" width="1307" height="720" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog/0.0.1440.900@0.0.1440.900" timestamp="1636539153739" />
     <state x="100" y="100" width="1240" height="700" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog/73.25.1367.875@73.25.1367.875" timestamp="1636534209163" />
-    <state x="0" y="0" width="1340" height="800" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1636642021415">
+    <state x="100" y="100" width="1240" height="700" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1636841522609">
       <screen x="73" y="25" width="1367" height="875" />
     </state>
     <state x="100" y="100" width="1240" height="700" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1440.900@0.0.1440.900" timestamp="1636552205607" />
-    <state x="0" y="0" width="1340" height="800" key="com.intellij.history.integration.ui.views.FileHistoryDialog/73.25.1367.875@73.25.1367.875" timestamp="1636642021415" />
+    <state x="100" y="100" width="1240" height="700" key="com.intellij.history.integration.ui.views.FileHistoryDialog/73.25.1367.875@73.25.1367.875" timestamp="1636841522609" />
     <state x="546" y="179" key="com.intellij.openapi.vcs.changes.SpecificFilesViewDialog" timestamp="1636465846554">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="546" y="179" key="com.intellij.openapi.vcs.changes.SpecificFilesViewDialog/0.0.1440.900@0.0.1440.900" timestamp="1636465846554" />
-    <state x="521" y="368" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1636455657780">
-      <screen x="73" y="25" width="1367" height="875" />
+    <state x="472" y="353" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1636813725415">
+      <screen x="0" y="0" width="1440" height="900" />
     </state>
+    <state x="472" y="353" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1440.900@0.0.1440.900" timestamp="1636813725415" />
     <state x="521" y="368" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/73.25.1367.875@73.25.1367.875" timestamp="1636455657780" />
-    <state x="522" y="243" width="617" height="548" key="find.popup" timestamp="1636722676884">
+    <state x="873" y="352" width="567" height="548" key="find.popup" timestamp="1636841260553">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="522" y="243" width="617" height="548" key="find.popup/0.0.1440.900@0.0.1440.900" timestamp="1636722676884" />
-    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup" timestamp="1636726227864">
+    <state x="873" y="352" width="567" height="548" key="find.popup/0.0.1440.900@0.0.1440.900" timestamp="1636841260553" />
+    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup" timestamp="1636827443090">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup/0.0.1440.900@0.0.1440.900" timestamp="1636726227864" />
+    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup/0.0.1440.900@0.0.1440.900" timestamp="1636827443090" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

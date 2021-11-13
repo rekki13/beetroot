@@ -203,20 +203,24 @@ function filter_wp_nav_menu_objects( $sorted_menu_items, $args ) {
 
 // add the filter
 add_filter( 'wp_nav_menu_objects', 'filter_wp_nav_menu_objects', 10, 2 );
-add_filter( 'wp_check_filetype_and_ext', function($data, $file, $filename, $mimes) {
-	$filetype = wp_check_filetype( $filename, $mimes );
-	return [
-		'ext'             => $filetype['ext'],
-		'type'            => $filetype['type'],
-		'proper_filename' => $data['proper_filename']
-	];
+add_filter( 'wp_check_filetype_and_ext',
+	function ( $data, $file, $filename, $mimes ) {
+		$filetype = wp_check_filetype( $filename, $mimes );
 
-}, 10, 4 );
+		return [
+			'ext'             => $filetype['ext'],
+			'type'            => $filetype['type'],
+			'proper_filename' => $data['proper_filename']
+		];
 
-function cc_mime_types( $mimes ){
+	}, 10, 4 );
+
+function cc_mime_types( $mimes ) {
 	$mimes['svg'] = 'image/svg+xml';
+
 	return $mimes;
 }
+
 add_filter( 'upload_mimes', 'cc_mime_types' );
 
 function fix_svg() {
@@ -227,4 +231,343 @@ function fix_svg() {
         }
         </style>';
 }
+
 add_action( 'admin_head', 'fix_svg' );
+
+add_action( 'wp_ajax_find-best-posts', 'vb_filter_posts_mt' );
+
+/**
+ * AJAC filter posts by taxonomy term
+ */
+function vb_filter_posts_mt() {
+	if ( ! isset( $_POST['nonce'] )
+	     || ! wp_verify_nonce( $_POST['nonce'], 'bobz' )
+	) {
+		die( 'Permission denied' );
+	}
+
+	$rekki_cookie_view = htmlspecialchars( $_COOKIE["rekki_cookie_view"] );
+	print_r( $rekki_cookie_view );
+	// Вывести одно конкретное значение cookie
+	/**
+	 * Default response
+	 */
+	$response = [
+		'status'  => 500,
+		'message' => 'Something is wrong, please try again later ...',
+		'content' => false,
+		'found'   => 0
+	];
+
+
+	$all     = false;
+	$terms   = $_POST['params']['terms'];
+	$page    = intval( $_POST['params']['page'] );
+	$qty     = intval( $_POST['params']['qty'] );
+	$pager   = isset( $_POST['pager'] ) ? $_POST['pager'] : 'pager';
+	$tax_qry = [ 'language', 'locations' ];
+	$msg     = '';
+
+
+	/**
+	 * Check if term exists
+	 */
+	if ( ! is_array( $terms ) ) :
+		$response = [
+			'status'  => 501,
+			'message' => 'Term doesn\'t exist',
+			'content' => 0
+		];
+
+		die( json_encode( $response ) );
+	else :
+
+		foreach ( $terms as $tax => $slugs ) :
+
+			if ( in_array( 'all-terms', $slugs ) ) {
+				$all = true;
+			}
+
+			$tax_qry[] = [
+				'taxonomy' => $tax,
+				'field'    => 'slug',
+				'terms'    => $slugs,
+			];
+		endforeach;
+	endif;
+
+	/**
+	 * Setup query
+	 */
+	$args = [
+		'paged'          => $page,
+		'post_type'      => 'vacancies',
+		'post_status'    => 'publish',
+		'orderby'        => 'date',
+		'order'          => 'DESC',
+		'posts_per_page' => $qty,
+	];
+
+	if ( $tax_qry && ! $all ) :
+		$args['tax_query'] = $tax_qry;
+	endif;
+
+	$qry = new WP_Query( $args );
+
+	ob_start();
+	if ( $qry->have_posts() ) :
+		?>
+        <div class="row"><?php
+			while ( $qry->have_posts() ) : $qry->the_post();
+				?>
+				<?php get_template_part( 'template-parts/parts/vacancies/vacancy',
+					'grid') ?>
+
+			<?php endwhile;
+			?>
+        </div>
+
+		<?php
+
+		/**
+		 * Pagination
+		 */
+		if ( $pager == 'pager' ) {
+			vb_mt_ajax_pager( $qry, $page );
+		}
+
+
+		foreach ( $tax_qry as $tax ) :
+			$msg .= 'Displaying terms: ';
+
+			foreach ( $tax['terms'] as $trm ) :
+				$msg .= $trm . ', ';
+			endforeach;
+
+			$msg .= ' from taxonomy: ' . $tax['taxonomy'];
+			$msg .= '. Found: ' . $qry->found_posts . ' posts';
+		endforeach;
+
+		$response = [
+			'status'  => 200,
+			'found'   => $qry->found_posts,
+			'message' => $msg,
+			'method'  => $pager,
+			'next'    => $page + 1
+		];
+
+
+	else :
+
+		$response = [
+			'status'  => 201,
+			'message' => 'No posts found',
+			'next'    => 0
+		];
+
+	endif;
+
+	$response['content'] = ob_get_clean();
+
+	die( json_encode( $response ) );
+
+}
+
+add_action( 'wp_ajax_do_filter_posts_mt', 'vb_filter_posts_mt' );
+add_action( 'wp_ajax_nopriv_do_filter_posts_mt', 'vb_filter_posts_mt' );
+
+
+/**
+ * Shortocde for displaying terms filter and results on page
+ */
+function vb_filter_posts_mt_sc( $atts ) {
+
+	$icon_list = get_stylesheet_directory() . '/assets/images/icons/e-list.svg';
+	$icon_grid = get_stylesheet_directory() . '/assets/images/icons/e-grid.svg';
+
+	$a = shortcode_atts( array(
+		'tax'      => 'languages',
+		// Taxonomy
+		'terms'    => false,
+		// Get specific taxonomy terms only
+		'active'   => false,
+		// Set active term by ID
+		'per_page' => - 1,
+		// How many posts per page,
+		'pager'    => 'pager'
+		// 'pager' to use numbered pagination || 'infscr' to use infinite scroll
+	), $atts );
+
+	$b = shortcode_atts( array(
+		'tax'      => 'locations',
+		// Taxonomy
+		'terms'    => false,
+		// Get specific taxonomy terms only
+		'active'   => false,
+		// Set active term by ID
+		'per_page' => - 1,
+		// How many posts per page,
+		'pager'    => 'pager'
+		// 'pager' to use numbered pagination || 'infscr' to use infinite scroll
+	), $atts );
+
+	$result = null;
+	$terms  = get_terms( $a['tax'] );
+	$termsb = get_terms( $b['tax'] );
+	if ( count( $terms ) ) :
+		ob_start(); ?>
+        <div id="container-async" data-paged="<?= $a['per_page']; ?>"
+             class="sc-ajax-filter sc-ajax-filter-multi">
+
+            <div class="input-group">
+                <input id="myInput" type="text"
+                       placeholder="Search job openings" class="form-control"
+                       aria-label="Text input with dropdown button">
+
+                <div class="input-group-append">
+                    <button class="btn btn-outline-secondary dropdown-toggle"
+                            type="button" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">Dropdown
+                    </button>
+                    <div class="dropdown-menu">
+                        <ul class="nav-filter list-group list-group-horizontal">
+							<?php foreach ( $termsb as $term ) : ?>
+								<?php if ( $term->taxonomy == 'locations' ): ?>
+                                    <li class="list-group-item p-0 <?php if ( $term->term_id
+									                                          == $a['active']
+									) : ?> active<?php endif; ?>">
+                                        <a href="<?= get_term_link( $term,
+											$term->taxonomy ); ?>"
+                                           data-filter="<?= $term->taxonomy; ?>"
+                                           data-term="<?= $term->slug; ?>"
+                                           data-page="1"
+                                           class="p-2 d-block">
+											<?= $term->name; ?>
+                                        </a>
+                                    </li>
+								<?php endif; ?>
+							<?php endforeach; ?>
+                        </ul>
+                    </div>
+                </div>
+                <div class="input-group-append">
+                    <button class="btn btn-outline-secondary dropdown-toggle"
+                            type="button" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">Dropdown
+                    </button>
+                    <div class="dropdown-menu">
+                        <ul class="nav-filter list-group list-group-horizontal">
+							<?php foreach ( $termsb as $term ) : ?>
+								<?php if ( $term->taxonomy == 'locations' ): ?>
+                                    <li class="list-group-item p-0 <?php if ( $term->term_id
+									                                          == $a['active']
+									) : ?> active<?php endif; ?>">
+                                        <a href="<?= get_term_link( $term,
+											$term->taxonomy ); ?>"
+                                           data-filter="<?= $term->taxonomy; ?>"
+                                           data-term="<?= $term->slug; ?>"
+                                           data-page="1"
+                                           class="p-2 d-block">
+											<?= $term->name; ?>
+                                        </a>
+                                    </li>
+								<?php endif; ?>
+							<?php endforeach; ?>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <ul class="nav-filter list-group list-group-horizontal">
+                        <li class="list-group-item">
+                            <a href="#"
+                               data-filter="<?= $terms[0]->taxonomy; ?>"
+                               data-term="all-terms" data-page="1">
+                                Show All
+                            </a>
+                        </li>
+						<?php foreach ( $terms as $term ) : ?>
+							<?php if ( $term->taxonomy != 'locations' ): ?>
+                                <li class="list-group-item p-0 <?php if ( $term->term_id
+								                                          == $a['active']
+								) : ?> active<?php endif; ?>">
+                                    <a href="<?= get_term_link( $term,
+										$term->taxonomy ); ?>"
+                                       data-filter="<?= $term->taxonomy; ?>"
+                                       data-term="<?= $term->slug; ?>"
+                                       data-page="1"
+                                       class="p-2 d-block">
+										<?= $term->name; ?>
+                                    </a>
+                                </li>
+							<?php endif; ?>
+						<?php endforeach; ?>
+                    </ul>
+                </div>
+                <div class="col">
+
+                    <div class="btn-group" role="group"
+                         aria-label="Basic example">
+                        <button type="button" id="vacancies__view-grid"
+                                value="grid"
+                                class="btn btn-secondary"><?= file_get_contents( $icon_grid ); ?>
+                        </button>
+                        <button type="button" id="vacancies__view-list"
+                                value="list"
+                                class="btn btn-secondary"><?= file_get_contents( $icon_list ); ?>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="content"></div>
+        </div>
+		<?php $result = ob_get_clean();
+	endif;
+
+	return $result;
+}
+
+add_shortcode( 'ajax_filter_posts_mt', 'vb_filter_posts_mt_sc' );
+
+
+/**
+ * Pagination
+ */
+function vb_mt_ajax_pager( $query = null, $paged = 1 ) {
+
+	if ( ! $query ) {
+		return;
+	}
+
+	$paginate = paginate_links( [
+		'base'      => '%_%',
+		'type'      => 'array',
+		'total'     => $query->max_num_pages,
+		'format'    => '#page=%#%',
+		'current'   => max( 1, $paged ),
+		'prev_text' => 'Prev',
+		'next_text' => 'Next'
+	] );
+
+	if ( $query->max_num_pages > 1 ) : ?>
+        <ul class="pagination">
+			<?php foreach ( $paginate as $page ) : ?>
+                <li><?php echo $page; ?></li>
+			<?php endforeach; ?>
+        </ul>
+	<?php endif;
+}
+
+function assets() {
+
+	wp_enqueue_script( 'tuts/js', get_stylesheet_directory_uri() . '/assets/js/script/custom_ajax.js', [ 'jquery' ], null, true );
+
+	wp_localize_script( 'tuts/js', 'bobz', array(
+		'nonce'    => wp_create_nonce( 'bobz' ),
+		'ajax_url' => admin_url( 'admin-ajax.php' )
+	) );
+}
+
+add_action( 'wp_enqueue_scripts', 'assets', 100 );
+

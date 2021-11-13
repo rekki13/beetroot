@@ -90,7 +90,6 @@ img {
 
 .wrapper {
   flex: 1 0 auto;
-  background: #fff url('../images/main_bottom_background.png') left calc(100% + 1px) no-repeat;
   padding: 0;
 
   @include media(sm) {

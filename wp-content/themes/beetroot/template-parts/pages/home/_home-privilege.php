@@ -51,24 +51,26 @@ $testimonials_array  = $field['choose_testimonial'];
 
 						endforeach;
 						?>
-				<?php
+						<?php
 
-				if ( $testimonials_enable ):
-					?>
-                    <div class="items swiper-container  swiper-testimonials">
-                        <div class="swiper-wrapper">
-							<?php
-							foreach ( $testimonials_array as $item ) :?>
+						if ( $testimonials_enable ):
+						?>
+                        <div class="items swiper-container  swiper-testimonials">
+                            <div class="swiper-wrapper">
 								<?php
-								get_template_part( 'template-parts/parts/_part',
-									'page-testimonials',
-									$item );
-							endforeach;
+								foreach ( $testimonials_array as $item ) :?>
+									<?php
+									get_template_part( 'template-parts/parts/_part',
+										'page-testimonials',
+										$item );
+								endforeach;
 
-							?></div>
-                    </div></div><?php
-				endif; ?>
-            </div>                </div>
+								?></div>
+                        </div>
+                    </div><?php
+					endif; ?>
+                </div>
+            </div>
 
         </div>
         <!-- end left -->
