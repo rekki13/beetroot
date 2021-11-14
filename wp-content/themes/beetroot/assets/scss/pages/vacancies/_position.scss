@@ -1,0 +1,51 @@
+
+.vacancy__position {
+  .form {
+
+    &-group {
+      flex: 1 0 100%;
+
+      .row {
+        @include media(sm) {
+          flex-direction: column;
+        }
+      }
+    }
+
+    &-check {
+
+      @include media(md) {
+        display: flex;
+        align-items: baseline;
+        justify-content: space-between;
+      }
+      @include media(sm) {
+        display: flex;
+        align-items: baseline;
+        justify-content: space-between;
+      }
+
+
+      &-label {
+        &-text {
+          @include media(md) {
+
+            width: 95%;
+          }
+          @include media(sm) {
+
+            width: 90%;
+          }
+
+        }
+      }
+    }
+
+    .submit {
+      @include media(sm) {
+
+        width: 100%;
+      }
+    }
+  }
+}

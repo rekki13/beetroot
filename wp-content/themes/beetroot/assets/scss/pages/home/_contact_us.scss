@@ -1,0 +1,46 @@
+.home {
+
+  &__contact_us {
+
+    .row {
+      @include media(sm) {
+        flex-direction: column;
+
+        align-items: center;
+      }
+
+      &--left {
+        @include media(md) {
+          width: 60% !important;
+
+        }
+
+        @include media(sm) {
+
+          width: 100% !important;
+          text-align: center;
+        }
+      }
+
+      &--right {
+        @include media(md) {
+          width: 40% !important;
+          text-align: center;
+
+        }
+        @include media(sm) {
+          width: 100% !important;
+          text-align: center;
+
+        }
+
+        .link-info {
+          border-radius: 30px;
+          border: 1px solid $border-pink !important;
+          color: $color-pink;
+          padding: 10px 20px;
+        }
+      }
+    }
+  }
+}

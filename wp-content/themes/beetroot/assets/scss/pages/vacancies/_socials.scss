@@ -1,0 +1,45 @@
+.single-vacancies {
+
+  .vacancy__socials {
+
+    background-color: $background-grey;
+
+    @include media(sm) {
+      flex-direction: column;
+    }
+  }
+
+  .socials {
+    &__left {
+
+    }
+
+    &__right {
+      .list-group {
+        @include media(sm) {
+
+          flex-wrap: wrap
+        }
+
+        li {
+          padding: 0;
+          @include media(sm) {
+            text-align: center;
+            width: 20%;
+          }
+
+          a {
+            padding: 0;
+            display: block;
+
+            svg{
+              width: 100%;
+              height: 100%;
+              display: block;
+            }
+          }
+        }
+      }
+    }
+  }
+}
