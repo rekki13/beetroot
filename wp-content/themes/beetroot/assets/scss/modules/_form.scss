@@ -12,6 +12,20 @@
   }
 
   .form-files {
+
+    .col:not(:first-child) {
+
+      @include media(md) {
+
+        text-align: right;
+      }
+      @include media(sm) {
+
+        text-align: left;
+      }
+    }
+
+
     .btn {
       font-size: 14px;
       color: $color-pink;
@@ -47,6 +61,6 @@
 
   .submit {
     background-color: $border-pink !important;
-    border-radius:30px;
+    border-radius: 30px;
   }
 }

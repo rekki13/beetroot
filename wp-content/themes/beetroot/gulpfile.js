@@ -1,3 +1,4 @@
+
 const   gulp            = require('gulp'),
     watch           = require('gulp-watch'),
     concat          = require('gulp-concat'),
@@ -74,6 +75,7 @@ gulp.task('js', function() {
         .pipe(uglify())
         .pipe(gulp.dest('./assets/js/'))
         .pipe(browserSync.reload({stream: true}))
+
 
 });
 

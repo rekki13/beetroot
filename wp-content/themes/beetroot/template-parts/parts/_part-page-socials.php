@@ -13,11 +13,11 @@ if ( have_rows( 'socials', 'theme_settings' ) ):
 				$icon_alt = get_sub_field( 'alter_icon' );
 				$link     = get_sub_field( 'link' );
 				if ( $icon && $icon_alt == 'image/png' ):
-					echo( '<a href="' . $link . '" target="_blank"><img src="'
+					echo( '<li class="list-group-item border-0 bg-transparent"><a href="' . $link . '" target="_blank"><img src="'
 					      . $icon['icon']['url']
 					      . '"alt="'
 					      . $icon['icon']['alt']
-					      . '"></a>' );
+					      . '"></a></li>' );
 				else:
 					if ( $alt_color ):
 						$svg = file_get_contents( $icon_alt['url'] );
@@ -27,8 +27,8 @@ if ( have_rows( 'socials', 'theme_settings' ) ):
 						icons_alternative_color( $svg );
 
 					endif;
-					echo( '<a href="' . $link . '" target="_blank">' . $svg
-					      . '</a>' );
+					echo( '<li class="list-group-item border-0 bg-transparent"><a href="' . $link . '" target="_blank">' . $svg
+					      . '</a></li>' );
 				endif;
 
 			endif;

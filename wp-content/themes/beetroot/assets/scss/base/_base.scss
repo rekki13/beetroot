@@ -28,7 +28,7 @@ html {
 }
 
 a {
-  color: $color-pink;
+  color: $color-pink!important;
   text-decoration: none !important;
   outline: none !important;
   position: relative;
@@ -36,7 +36,7 @@ a {
 
 a:hover {
   text-decoration: none;
-  color: $color-pink;
+  color: $color-pink!important;
   border-bottom-color: transparent;
   opacity: .5;
   transition: .3s;
@@ -84,8 +84,12 @@ img {
   overflow: hidden;
   display: flex;
   flex-direction: column;
+  padding-top: 80px;
 
+  @include media(md) {
+    padding-top: 100px;
 
+  }
 }
 
 .wrapper {
@@ -212,8 +216,16 @@ h6, .h6 {
 
 input {
   outline: none;
+  &:focus {
+    color: transparent !important;
+  }
 }
 
+input, button {
+  &:focus {
+    color: transparent !important;
+  }
+}
 
 .regular-colors {
   svg {

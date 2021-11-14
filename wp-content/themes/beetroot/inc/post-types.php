@@ -72,7 +72,7 @@ function beetroot_post_types(){
 		//'map_meta_cap'      => null, // Ставим true чтобы включить дефолтный обработчик специальных прав
 		'hierarchical'        => false,
 		'supports'            => [ 'title','thumbnail', 'editor' ], // 'title','editor','author','thumbnail','excerpt','trackbacks','custom-fields','comments','revisions','page-attributes','post-formats'
-		'taxonomies'          => ['languages','locations'],
+		'taxonomies'          => ['languages','locations','departments'],
 		'has_archive'         => false,
 		'rewrite'             => true,
 		'query_var'           => true,
@@ -92,7 +92,7 @@ function beetroot_build_taxonomies(){
 			'edit_item'         => 'Edit Location',
 			'update_item'       => 'Update Location',
 			'add_new_item'      => 'Add New Location',
-			'new_item_name'     => 'New Genre Location',
+			'new_item_name'     => 'New Location',
 			'menu_name'         => 'Locations',
 		],
 		'description'           => '', // описание таксономии
@@ -128,8 +128,44 @@ function beetroot_build_taxonomies(){
 			'edit_item'         => 'Edit language',
 			'update_item'       => 'Update language',
 			'add_new_item'      => 'Add New language',
-			'new_item_name'     => 'New Genre language',
+			'new_item_name'     => 'New language',
 			'menu_name'         => 'Languages',
+		],
+		'description'           => '', // описание таксономии
+		'public'                => true,
+		// 'publicly_queryable'    => null, // равен аргументу public
+		// 'show_in_nav_menus'     => true, // равен аргументу public
+		// 'show_ui'               => true, // равен аргументу public
+		// 'show_in_menu'          => true, // равен аргументу show_ui
+		// 'show_tagcloud'         => true, // равен аргументу show_ui
+		// 'show_in_quick_edit'    => null, // равен аргументу show_ui
+		'hierarchical'          => true,
+
+		'rewrite'               => true,
+		//'query_var'             => $taxonomy, // название параметра запроса
+		'capabilities'          => array(),
+		'meta_box_cb'           => null, // html метабокса. callback: `post_categories_meta_box` или `post_tags_meta_box`. false — метабокс отключен.
+		'show_admin_column'     => false, // авто-создание колонки таксы в таблице ассоциированного типа записи. (с версии 3.5)
+		'show_in_rest'          => null, // добавить в REST API
+		'rest_base'             => null, // $taxonomy
+		// '_builtin'              => false,
+		//'update_count_callback' => '_update_post_term_count',
+	] );
+	register_taxonomy( 'departments', [ 'vacancies' ], [
+		'label'                 => '', // определяется параметром $labels->name
+		'labels'                => [
+			'name'              => 'Departments',
+			'singular_name'     => 'Department',
+			'search_items'      => 'Search department',
+			'all_items'         => 'All department',
+			'view_item '        => 'View department',
+			'parent_item'       => 'Parent department',
+			'parent_item_colon' => 'Parent department:',
+			'edit_item'         => 'Edit department',
+			'update_item'       => 'Update department',
+			'add_new_item'      => 'Add New department',
+			'new_item_name'     => 'New department',
+			'menu_name'         => 'Departments',
 		],
 		'description'           => '', // описание таксономии
 		'public'                => true,

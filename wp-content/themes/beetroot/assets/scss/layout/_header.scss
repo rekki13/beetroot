@@ -1,10 +1,119 @@
-.header {
-  &-logo {
-    &__image-link {
-      width: 10%;
-    }
-    &__image{
+.header__wrapper {
+
+  position: fixed;
+  top: 0;
+  z-index: 999;
+  width: 100%;
+
+
+  .header {
+
+    &__left {
+      width: 10% !important;
+
+      @include media(xl) {
+        width: 15% !important;
+      }
+      @include media(md) {
+        width: 20% !important;
+      }
+
+      @include media(sm) {
+        width: 50% !important;
+      }
+
+      &-logo {
+        &__image-link {
+          width: 10%;
+          display: block;
+
+        }
+
+        &__image {
+
+        }
+      }
 
     }
+
+    &__right {
+      .navbar-toggler {
+        display: none;
+
+        @include media(sm) {
+
+          display: block;
+          width: 35%;
+          margin-left: auto;
+        }
+
+        &-icon {
+          width: 100%;
+          height: 100%;
+          display: block;
+
+          svg {
+            width: 100%;
+            height: 100%;
+            display: block;
+          }
+        }
+      }
+
+      #topnavbar {
+        display: block;
+
+
+        @include media(sm) {
+          background: white;
+          display: none;
+          position: absolute;
+          top: 100%;
+          height: 100vh;
+          z-index: 99;
+          right: -3%;
+        }
+      }
+
+      .navbar-toggler.toggle_active + #topnavbar {
+        display: block;
+      }
+
+    }
+
+
+
+    &__menu {
+      display: block;
+      height: 100%;
+
+      &-list {
+        align-items: center;
+        justify-content: end;
+
+        @include media(sm) {
+          justify-content: start;
+          align-items: flex-end;
+          flex-direction: column;
+        }
+        a{
+          color:$color-footer!important;
+        }
+      }
+    }
+    &__button {
+      border-radius: 30px;
+      border:1px solid $border-pink;
+      background: transparent;
+      a{
+        color: $color-pink;
+
+      }
+    }
+
+  }
+
+  .wrapper {
+    height: 100%;
   }
 }

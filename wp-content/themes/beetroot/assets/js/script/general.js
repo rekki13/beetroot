@@ -7,6 +7,10 @@ const AllPage = function () {
      * Plugin
      */
     const pluginStart = function () {
+            $('#navbar-toggler').on('click',function() {
+                // console.log('click')
+                $( this ).toggleClass( "toggle_active" );
+            });
 
     }
 
@@ -53,6 +57,8 @@ const HomePage = function () {
             slidesPerView: 1,
             slidesPerGroup: 1,
             loop: true,
+            autoHeight:true,
+
             navigation: {
                 nextEl: '.home__slider .swiper-button-next',
                 prevEl: '.home__slider .swiper-button-prev',
@@ -109,6 +115,7 @@ const Vacancies = function () {
                 $doc = $(document);
 
                 $doc.ready(function () {
+                    $rekkiViewSend = 'grid'
 
                     /**
                      * Retrieve posts
@@ -119,7 +126,6 @@ const Vacancies = function () {
                         $content = $container.find('.content');
                         $status = $container.find('.status');
                         $pager = $container.find('.infscr-pager a');
-
                         $status.text('Loading posts ...');
 
                         /**
@@ -134,7 +140,6 @@ const Vacancies = function () {
                         } else {
                             $method = 'pager';
                         }
-
                         /**
                          * Do AJAX
                          */
@@ -144,7 +149,7 @@ const Vacancies = function () {
                                 action: 'do_filter_posts_mt',
                                 nonce: bobz.nonce,
                                 params: $params,
-                                pager: $method
+                                pager: $method,
                             },
                             type: 'post',
                             dataType: 'json',
@@ -207,11 +212,10 @@ const Vacancies = function () {
                     /**
                      * Bind get_posts to tag cloud and navigation
                      */
-                    $('.sc-ajax-filter-multi').on('click', 'a[data-filter], .pagination a', function (event) {
+                    $('.sc-ajax-filter-multi').on('click', 'a[data-filter], .pagination a,#vacancies__view-grid, #vacancies__view-list', function (event) {
                         if (event.preventDefault) {
                             event.preventDefault();
                         }
-
                         $this = $(this);
                         /**
                          * Set filter active
@@ -254,25 +258,34 @@ const Vacancies = function () {
                             }
 
 
-                        } else {
-                            /**
-                             * Pagination
-                             */
-                            $page = parseInt($this.attr('href').replace(/\D/g, ''));
-                            $this = $('.nav-filter .active a');
                         }
 
+
+
+                        $('#vacancies__view-grid').click(function () {
+                            $rekkiViewSend = $(this).val();
+                            $('.view__buttons-list').removeClass('activeView')
+                            $(this).parent().addClass('activeView');
+
+                        });
+
+                        $('#vacancies__view-list').click(function () {
+                            $rekkiViewSend = $(this).val();
+                            $('.view__buttons-grid').removeClass('activeView')
+                            $(this).parent().addClass('activeView');
+
+                        });
 
                         $params = {
                             'page': $page,
                             'terms': $active,
                             'qty': $this.closest('#container-async').data('paged'),
+                            'rekkiView':$rekkiViewSend
                         };
-
+                        // console.log($params);
                         // Run query
                         get_posts($params);
                     });
-
                     /**
                      * Show all posts on page load
                      */
@@ -296,24 +309,6 @@ const Vacancies = function () {
         });
     }
     const ChangeGridList = function () {
-        // $("#vacancies__view-grid").on("click", function () { // When btn is pressed.
-        //     // var postGridList = $(this).attr("value");
-        //     var postGridList = $(this).val();
-        //     $postGridList = $(this).val();
-        //     var text = $(this).val();
-        //     console.log($postGridList);
-        //     // console.logxt);
-        //
-        //     $.ajax({
-        //         type: "POST",
-        //         url: "rekki",
-        //         cache: false,
-        //         success: function (html) {
-        //             $("#jegyek").html(html);
-        //         }
-        //     });
-        // });
-
 
     }
     /**
@@ -336,5 +331,3 @@ jQuery(document).ready(function () {
     HomePage.init();
     Vacancies.init();
 });
-
-

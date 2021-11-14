@@ -20,9 +20,9 @@ add_action( 'footer_parts', 'beetroot_footer_TagFooterInner', 30 );
 function beetroot_footer_TagFooterInner() {
 	$footer_sidebars = [ 'first', 'second', 'third' ];
 	?>
-    <div class="container my-5 py-5">
+    <div class="container mt-5 pb-5">
         <div class="row footer__row justify-content-between">
-            <div class="col-5 left">
+            <div class="my-3 col-xs-12 col-sm-12 col-md-12 col-lg-5 col-xl-5 col-xxl-5 left">
                 <div class="row left__menu">
 					<?php
 					foreach ( $footer_sidebars as $sidebar ):
@@ -31,7 +31,7 @@ function beetroot_footer_TagFooterInner() {
 						                           . $sidebar )
 						):
 							?>
-                            <div class="col-4">
+                            <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
 								<?php
 								dynamic_sidebar( 'beetroot-footer-'
 								                 . $sidebar );
@@ -49,7 +49,7 @@ function beetroot_footer_TagFooterInner() {
 			     && is_active_sidebar( 'beetroot-footer-fourth' )
 			):
 				?>
-                <div class="col-5 right">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-5 col-xl-5 col-xxl-5 right">
 					<?php
 					dynamic_sidebar( 'beetroot-footer-fourth' );
 					?>

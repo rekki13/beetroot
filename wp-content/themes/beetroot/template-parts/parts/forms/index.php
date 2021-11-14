@@ -63,20 +63,20 @@ if ( have_rows( 'content', get_the_ID() ) ):
 		endwhile;
 		?>
 
-        <div class="p-0 form-check">
+        <div class="p-0 form-check my-3">
             <input type="checkbox" class="btn-check form-check-input d-none" id="btncheck1" autocomplete="off" required>
             <label class="border form-check-label btn-outline-primary btn" for="btncheck1"></label>
-            <label  for="btncheck1">
+            <label  for="btncheck1" class="form-check-label-text">
                 I agree with Beetroot’s <a href="#"><span class="required">Privacy Policy</span></a> and saving data in compliance with Swedish law.
             </label>
         </div>
-        <div class="p-0 form-check">
+        <div class="p-0 form-check my-3">
             <input type="checkbox" class="btn-check form-check-input d-none" id="btncheck2" autocomplete="off" required>
             <label class="border form-check-label btn-outline-primary btn" for="btncheck2"></label>
-            <label  for="btncheck2">
+            <label  for="btncheck2" class="form-check-label-text">
                 Contact me with job offers in the future.            </label>
         </div>
-        <button type="submit" class="btn submit text-white"><?= __('Apply now')?></button>
+        <button type="submit" class="btn submit text-white"><span><?= __('Apply now')?></span></button>
 
     </form>
 <?php

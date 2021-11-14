@@ -78,6 +78,21 @@ if( function_exists('acf_add_local_field_group') ):
 				'max_size' => '',
 				'mime_types' => '',
 			),
+			array(
+				'key' => 'field_6193453470',
+				'label' => 'Color for icon',
+				'name' => 'color',
+				'type' => 'color_picker',
+				'instructions' => '',
+				'required' => 0,
+				'conditional_logic' => 0,
+				'wrapper' => array(
+					'width' => '',
+					'class' => '',
+					'id' => '',
+				),
+				'default_value' => '',
+			),
 		),
 		'location' => array(
 			array(

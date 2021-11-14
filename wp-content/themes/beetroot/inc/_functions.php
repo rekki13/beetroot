@@ -246,9 +246,7 @@ function vb_filter_posts_mt() {
 		die( 'Permission denied' );
 	}
 
-	$rekki_cookie_view = htmlspecialchars( $_COOKIE["rekki_cookie_view"] );
-	print_r( $rekki_cookie_view );
-	// Вывести одно конкретное значение cookie
+
 	/**
 	 * Default response
 	 */
@@ -267,8 +265,7 @@ function vb_filter_posts_mt() {
 	$pager   = isset( $_POST['pager'] ) ? $_POST['pager'] : 'pager';
 	$tax_qry = [ 'language', 'locations' ];
 	$msg     = '';
-
-
+//	$rekkiGridView =  $_POST['params']['rekkiView'] ;
 	/**
 	 * Check if term exists
 	 */
@@ -313,22 +310,20 @@ function vb_filter_posts_mt() {
 	endif;
 
 	$qry = new WP_Query( $args );
-
 	ob_start();
+	$vacancy_count = wp_count_posts($qry->query_vars['post_type']);
+	$rekki_view = ( $_POST['params']['rekkiView'] ); // 12345
 	if ( $qry->have_posts() ) :
-		?>
-        <div class="row"><?php
-			while ( $qry->have_posts() ) : $qry->the_post();
-				?>
-				<?php get_template_part( 'template-parts/parts/vacancies/vacancy',
-					'grid') ?>
+		echo( $rekki_view == 'grid' ? '<div class="row align-items-stretch">' : '<div class="table-responsive"><table class="table"> <thead><tr><th scope="col">'.$vacancy_count->publish.' opening</th><th scope="col">Department</th><th scope="col">Location</th><th scope="col">Tags</th><th scope="col">Client</th></tr> </thead>' );
+		while ( $qry->have_posts() ) : $qry->the_post();
 
-			<?php endwhile;
 			?>
-        </div>
+			<?php get_template_part( 'template-parts/parts/vacancies/vacancy',
+				$rekki_view );
+?>
 
-		<?php
-
+		<?php endwhile;
+		echo( $rekki_view == 'grid' ? '</div>' : '</table></div>' );
 		/**
 		 * Pagination
 		 */
@@ -355,20 +350,14 @@ function vb_filter_posts_mt() {
 			'method'  => $pager,
 			'next'    => $page + 1
 		];
-
-
 	else :
-
 		$response = [
 			'status'  => 201,
 			'message' => 'No posts found',
 			'next'    => 0
 		];
-
 	endif;
-
 	$response['content'] = ob_get_clean();
-
 	die( json_encode( $response ) );
 
 }
@@ -382,8 +371,12 @@ add_action( 'wp_ajax_nopriv_do_filter_posts_mt', 'vb_filter_posts_mt' );
  */
 function vb_filter_posts_mt_sc( $atts ) {
 
-	$icon_list = get_stylesheet_directory() . '/assets/images/icons/e-list.svg';
-	$icon_grid = get_stylesheet_directory() . '/assets/images/icons/e-grid.svg';
+	$icon_list   = get_stylesheet_directory()
+	               . '/assets/images/icons/e-list.svg';
+	$icon_grid   = get_stylesheet_directory()
+	               . '/assets/images/icons/e-grid.svg';
+	$icon_search = get_stylesheet_directory()
+	               . '/assets/images/icons/e-search.svg';
 
 	$a = shortcode_atts( array(
 		'tax'      => 'languages',
@@ -394,7 +387,7 @@ function vb_filter_posts_mt_sc( $atts ) {
 		// Set active term by ID
 		'per_page' => - 1,
 		// How many posts per page,
-		'pager'    => 'pager'
+		'pager'    => 'pager',
 		// 'pager' to use numbered pagination || 'infscr' to use infinite scroll
 	), $atts );
 
@@ -407,32 +400,47 @@ function vb_filter_posts_mt_sc( $atts ) {
 		// Set active term by ID
 		'per_page' => - 1,
 		// How many posts per page,
+		'pager'    => 'pager',
+
+		// 'pager' to use numbered pagination || 'infscr' to use infinite scroll
+	), $atts );$c = shortcode_atts( array(
+		'tax'      => 'departments',
+		// Taxonomy
+		'terms'    => false,
+		// Get specific taxonomy terms only
+		'active'   => false,
+		// Set active term by ID
+		'per_page' => - 1,
+		// How many posts per page,
 		'pager'    => 'pager'
 		// 'pager' to use numbered pagination || 'infscr' to use infinite scroll
 	), $atts );
 
 	$result = null;
-	$terms  = get_terms( $a['tax'] );
+	$terms  = get_terms( $a['tax'])	;
 	$termsb = get_terms( $b['tax'] );
+	$termsC = get_terms( $c['tax'] );
 	if ( count( $terms ) ) :
 		ob_start(); ?>
         <div id="container-async" data-paged="<?= $a['per_page']; ?>"
              class="sc-ajax-filter sc-ajax-filter-multi">
 
             <div class="input-group">
+                <i class="icon-search"><?= file_get_contents( $icon_search ); ?></i>
                 <input id="myInput" type="text"
-                       placeholder="Search job openings" class="form-control"
+                       placeholder="Search job openings"
+                       class="form-control input"
                        aria-label="Text input with dropdown button">
-
                 <div class="input-group-append">
-                    <button class="btn btn-outline-secondary dropdown-toggle"
+                    <button class="btn btn-outline-secondary border-0 dropdown-toggle ps-5"
                             type="button" data-toggle="dropdown"
-                            aria-haspopup="true" aria-expanded="false">Dropdown
+                            aria-haspopup="true" aria-expanded="false">All
+                        departments
                     </button>
                     <div class="dropdown-menu">
                         <ul class="nav-filter list-group list-group-horizontal">
-							<?php foreach ( $termsb as $term ) : ?>
-								<?php if ( $term->taxonomy == 'locations' ): ?>
+							<?php foreach ( $termsC as $term ) : ?>
+								<?php if ( $term->taxonomy == 'departments' ): ?>
                                     <li class="list-group-item p-0 <?php if ( $term->term_id
 									                                          == $a['active']
 									) : ?> active<?php endif; ?>">
@@ -451,9 +459,10 @@ function vb_filter_posts_mt_sc( $atts ) {
                     </div>
                 </div>
                 <div class="input-group-append">
-                    <button class="btn btn-outline-secondary dropdown-toggle"
+                    <button class="btn btn-outline-secondary border-0 dropdown-toggle ps-5"
                             type="button" data-toggle="dropdown"
-                            aria-haspopup="true" aria-expanded="false">Dropdown
+                            aria-haspopup="true" aria-expanded="false">All
+                        locations
                     </button>
                     <div class="dropdown-menu">
                         <ul class="nav-filter list-group list-group-horizontal">
@@ -477,46 +486,52 @@ function vb_filter_posts_mt_sc( $atts ) {
                     </div>
                 </div>
             </div>
-            <div class="row">
+            <div class="row row__filters my-5">
                 <div class="col">
                     <ul class="nav-filter list-group list-group-horizontal">
-                        <li class="list-group-item">
+                        <li class="list-group-item px-3 py-2 mx-2">
                             <a href="#"
                                data-filter="<?= $terms[0]->taxonomy; ?>"
-                               data-term="all-terms" data-page="1">
+                               data-term="all-terms" data-page="1"
+                               class=" d-block">
                                 Show All
                             </a>
                         </li>
 						<?php foreach ( $terms as $term ) : ?>
 							<?php if ( $term->taxonomy != 'locations' ): ?>
-                                <li class="list-group-item p-0 <?php if ( $term->term_id
-								                                          == $a['active']
+                                <li class="list-group-item px-3 py-2  mx-2 <?php if ( $term->term_id
+								                                                      == $a['active']
 								) : ?> active<?php endif; ?>">
                                     <a href="<?= get_term_link( $term,
 										$term->taxonomy ); ?>"
                                        data-filter="<?= $term->taxonomy; ?>"
                                        data-term="<?= $term->slug; ?>"
                                        data-page="1"
-                                       class="p-2 d-block">
-										<?= $term->name; ?>
+                                       class="d-block">
+										<?= $term->name . ' ' . $term->count ?>
                                     </a>
                                 </li>
 							<?php endif; ?>
 						<?php endforeach; ?>
                     </ul>
                 </div>
-                <div class="col">
+                <div class="col-1 view__buttons">
 
-                    <div class="btn-group" role="group"
+                    <div class="btn-group d-flex align-items-stretch h-100"
+                         role="group"
                          aria-label="Basic example">
-                        <button type="button" id="vacancies__view-grid"
-                                value="grid"
-                                class="btn btn-secondary"><?= file_get_contents( $icon_grid ); ?>
-                        </button>
-                        <button type="button" id="vacancies__view-list"
-                                value="list"
-                                class="btn btn-secondary"><?= file_get_contents( $icon_list ); ?>
-                        </button>
+                        <div class="col view__buttons-grid activeView">
+                            <button type="button" id="vacancies__view-grid"
+                                    value="grid"
+                                    class="btn btn-secondary vacancies__view p-0 bg-transparent border-0"><?= file_get_contents( $icon_grid ); ?>
+                            </button>
+                        </div>
+                        <div class="col view__buttons-list">
+                            <button type="button" id="vacancies__view-list"
+                                    value="list"
+                                    class="btn btn-secondary vacancies__view p-0 bg-transparent border-0"><?= file_get_contents( $icon_list ); ?>
+                            </button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -561,7 +576,7 @@ function vb_mt_ajax_pager( $query = null, $paged = 1 ) {
 
 function assets() {
 
-	wp_enqueue_script( 'tuts/js', get_stylesheet_directory_uri() . '/assets/js/script/custom_ajax.js', [ 'jquery' ], null, true );
+	wp_enqueue_script( 'tuts/js', 'scripts/tuts.js', [ 'jquery' ], null, true );
 
 	wp_localize_script( 'tuts/js', 'bobz', array(
 		'nonce'    => wp_create_nonce( 'bobz' ),
@@ -570,4 +585,3 @@ function assets() {
 }
 
 add_action( 'wp_enqueue_scripts', 'assets', 100 );
-

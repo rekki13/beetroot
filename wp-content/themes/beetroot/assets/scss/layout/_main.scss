@@ -1,20 +1,46 @@
 main {
   z-index: 1;
+  @include media(md) {
+    padding-top: 0;
+
+  }
+  @include media(sm) {
+
+    padding-top: 0;
+  }
+
 
   .section {
     height: auto;
     padding: 100px 0;
+    @include media(md) {
+      padding: 80px 0;
+
+    }
+    @include media(sm) {
+      padding: 50px 0;
+
+    }
 
     &--last {
+
       padding-bottom: 120px;
       margin-bottom: -20px;
+
+      @include media(sm) {
+        padding-bottom: 60px;
+        margin-bottom: -10px;
+
+      }
     }
   }
 
-  @include media(md) {
-    padding-top: 120px;
 
+  .col-10 {
+    @include media(sm) {
 
+      width: 83.33333% !important;
+    }
   }
 }
 

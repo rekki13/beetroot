@@ -19,9 +19,9 @@ while ( have_posts() ) : // Start of the loop.
 		foreach ( $sections as $section ) :
 
 			// TODO Old Version WP
-			set_query_var( 'vacancies_field', $section );
+			set_query_var( 'home_field', $section );
 			get_template_part(
-				'template-parts/pages/vacancies/_vacancies',
+				'template-parts/pages/home/_home',
 				$section['acf_fc_layout']
 			);
 

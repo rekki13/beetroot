@@ -7,7 +7,7 @@ defined( 'ABSPATH' ) || exit;
 /**
  * Fields
  */
-$field = get_query_var( 'vacancies_field' );
+$field = get_query_var( 'home_field' );
 $title = $field['title'];
 $text  = $field['text'];
 
@@ -18,7 +18,7 @@ $locations_terms = get_terms( [
 ?>
 
 <!-- Home Rise -->
-<section class="vacancies__intro vacancies section">
+<section class="home__intro vacancies section">
 
     <!-- container -->
     <div class="container">

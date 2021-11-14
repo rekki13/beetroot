@@ -2,34 +2,48 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="90ffef3f-5a87-4b97-9767-8d558575fe14" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/wp-content/themes/beetroot/assets/images/icons/e-grid.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/themes/beetroot/assets/images/icons/e-list.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/themes/beetroot/assets/images/icons/e-location.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/themes/beetroot/template-parts/pages/vacancies/_vacancies-contact_us.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/themes/beetroot/template-parts/parts/vacancies/vacansy-list.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/beetroot/assets/images/icons/e-search.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/beetroot/single-vacancies.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/beetroot/template-parts/parts/vacancies/vacancy-list.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wp-content/themes/beetroot/assets/css/bundle.css" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/beetroot/assets/css/bundle.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/beetroot/assets/images/left_menu_arrow_red.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/beetroot/assets/images/left_menu_arrow_yellow.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/beetroot/assets/images/logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/beetroot/assets/images/logo.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/beetroot/assets/images/logo_white.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/beetroot/assets/images/main_bottom_background.png" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/beetroot/template-parts/parts/vacancies/vacancy-grid.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/beetroot/assets/images/no-photo.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/beetroot/assets/images/popup-close.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/beetroot/assets/images/popup-heart.svg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/wp-content/themes/beetroot/assets/js/bundle.js" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/beetroot/assets/js/bundle.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wp-content/themes/beetroot/assets/js/script/general.js" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/beetroot/assets/js/script/general.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wp-content/themes/beetroot/assets/scss/base/_base.scss" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/beetroot/assets/scss/base/_base.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/beetroot/assets/scss/pages/vacancies/_contact_us.scss" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/beetroot/assets/scss/pages/vacancies/_contact_us.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/beetroot/assets/scss/pages/vacancies/_join_the_team.scss" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/beetroot/assets/scss/pages/vacancies/_join_the_team.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/beetroot/assets/scss/base/_variables.scss" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/beetroot/assets/scss/base/_variables.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/beetroot/assets/scss/layout/_footer.scss" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/beetroot/assets/scss/layout/_footer.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/beetroot/assets/scss/layout/_header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/beetroot/assets/scss/layout/_header.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/beetroot/assets/scss/layout/_main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/beetroot/assets/scss/layout/_main.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/beetroot/assets/scss/modules/_form.scss" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/beetroot/assets/scss/modules/_form.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/beetroot/assets/scss/pages/home/_benefits.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/beetroot/assets/scss/pages/home/_index.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/beetroot/assets/scss/pages/home/_intro.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/beetroot/assets/scss/pages/home/_privilege.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/beetroot/assets/scss/pages/home/_rise.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/beetroot/assets/scss/pages/home/_slider.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/beetroot/assets/scss/pages/home/socials.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/beetroot/assets/scss/pages/vacancies/_contact_us.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/beetroot/assets/scss/pages/vacancies/_join_the_team.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/beetroot/assets/scss/pages/vacancies/index.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/beetroot/assets/scss/parts/testimonials.scss" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/beetroot/assets/scss/parts/testimonials.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/beetroot/gulpfile.js" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/beetroot/gulpfile.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wp-content/themes/beetroot/inc/_acf.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/beetroot/inc/_acf.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/beetroot/inc/_custom-footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/beetroot/inc/_custom-footer.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/beetroot/inc/_custom-header.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/beetroot/inc/_custom-header.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wp-content/themes/beetroot/inc/_functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/beetroot/inc/_functions.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/beetroot/inc/_script-style.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/beetroot/inc/_script-style.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wp-content/themes/beetroot/inc/post-types.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/beetroot/inc/post-types.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/beetroot/template-parts/pages/home/_home-privilege.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/beetroot/template-parts/pages/home/_home-privilege.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/beetroot/template-parts/pages/vacancies/_vacancies-join_the_team.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/beetroot/template-parts/pages/vacancies/_vacancies-join_the_team.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/beetroot/template-parts/parts/_part-page-testimonials.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/beetroot/template-parts/parts/_part-page-testimonials.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/beetroot/page-vacancies.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/beetroot/page-vacancies.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/beetroot/template-parts/pages/home/_home-benefits.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/beetroot/template-parts/pages/home/_home-intro.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/beetroot/template-parts/pages/home/_home-position.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/beetroot/template-parts/pages/home/_home-privilege.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/beetroot/template-parts/pages/home/_home-socials.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/beetroot/template-parts/pages/vacancies/_vacancies-contact_us.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/beetroot/template-parts/pages/home/_home-contact_us.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/beetroot/template-parts/pages/vacancies/_vacancies-join_the_team.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/beetroot/template-parts/pages/home/_home-join_the_team.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/beetroot/template-parts/parts/_part-page-socials.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/beetroot/template-parts/parts/_part-page-socials.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/beetroot/template-parts/parts/forms/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/beetroot/template-parts/parts/forms/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/beetroot/template-parts/parts/vacancies/vacancy-grid.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/beetroot/template-parts/parts/vacancies/vacancy-grid.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/beetroot/template-parts/parts/vacancies/vacansy-list.php" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,9 +57,9 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Sass File" />
-        <option value="SCSS File" />
         <option value="HTML File" />
         <option value="JavaScript File" />
+        <option value="SCSS File" />
       </list>
     </option>
   </component>
@@ -78,10 +92,11 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/wp-content/themes/beetroot/assets/images/icons/social" />
-      <recent name="$PROJECT_DIR$/wp-content/themes/beetroot/assets/images/icons" />
-      <recent name="$PROJECT_DIR$/wp-content/themes/beetroot/template-parts/parts/forms" />
-      <recent name="$PROJECT_DIR$/wp-content/themes/beetroot/template-parts/parts/forms/inputs" />
+      <recent name="$PROJECT_DIR$/wp-content/themes/beetroot/assets/scss/pages/vacancies" />
+      <recent name="$PROJECT_DIR$/wp-content/themes/beetroot/assets/scss/pages/home" />
+      <recent name="$PROJECT_DIR$/wp-content/themes/beetroot/assets/scss/pages/Новая папка" />
+      <recent name="$PROJECT_DIR$/wp-content/themes/beetroot/template-parts/pages/vacancies" />
+      <recent name="$PROJECT_DIR$/wp-content/themes/beetroot/template-parts/pages/home" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/wp-content/themes/beetroot/assets/images/icons" />
@@ -105,7 +120,7 @@
       <workItem from="1636621541628" duration="9386000" />
       <workItem from="1636633604994" duration="3879000" />
       <workItem from="1636639315852" duration="47178000" />
-      <workItem from="1636798211448" duration="43715000" />
+      <workItem from="1636798211448" duration="86269000" />
     </task>
     <task id="LOCAL-00001" summary="created pro">
       <created>1636465663388</created>
@@ -156,7 +171,14 @@
       <option name="project" value="LOCAL" />
       <updated>1636728750406</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Vacancy page">
+      <created>1636842614969</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1636842614970</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -169,7 +191,8 @@
     <MESSAGE value="Full home page by functions" />
     <MESSAGE value="header, footer, join us" />
     <MESSAGE value="remove svg" />
-    <option name="LAST_COMMIT_MESSAGE" value="remove svg" />
+    <MESSAGE value="Vacancy page" />
+    <option name="LAST_COMMIT_MESSAGE" value="Vacancy page" />
   </component>
   <component name="WindowStateProjectService">
     <state x="184" y="109" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1636720899608">
@@ -180,10 +203,10 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="467" y="309" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1440.900@0.0.1440.900" timestamp="1636622407366" />
-    <state x="292" y="25" key="CommitChangelistDialog2" timestamp="1636728749550">
+    <state x="292" y="25" key="CommitChangelistDialog2" timestamp="1636842613100">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="292" y="25" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1636728749550" />
+    <state x="292" y="25" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1636842613100" />
     <state x="150" y="78" key="DiffContextDialog" timestamp="1636728736739">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
@@ -204,10 +227,10 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state width="1398" height="245" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1636455453628" />
-    <state x="540" y="377" key="NewPhpFileDialog" timestamp="1636830668611">
+    <state x="540" y="377" key="NewPhpFileDialog" timestamp="1636912805634">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="540" y="377" key="NewPhpFileDialog/0.0.1440.900@0.0.1440.900" timestamp="1636830668611" />
+    <state x="540" y="377" key="NewPhpFileDialog/0.0.1440.900@0.0.1440.900" timestamp="1636912805634" />
     <state x="229" y="86" key="SettingsEditor" timestamp="1636561131588">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
@@ -221,38 +244,27 @@
     </state>
     <state x="28" y="77" width="1307" height="720" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog/0.0.1440.900@0.0.1440.900" timestamp="1636539153739" />
     <state x="100" y="100" width="1240" height="700" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog/73.25.1367.875@73.25.1367.875" timestamp="1636534209163" />
-    <state x="100" y="100" width="1240" height="700" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1636841522609">
-      <screen x="73" y="25" width="1367" height="875" />
+    <state x="100" y="100" width="1240" height="700" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1636901756638">
+      <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="100" y="100" width="1240" height="700" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1440.900@0.0.1440.900" timestamp="1636552205607" />
+    <state x="100" y="100" width="1240" height="700" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1440.900@0.0.1440.900" timestamp="1636901756638" />
     <state x="100" y="100" width="1240" height="700" key="com.intellij.history.integration.ui.views.FileHistoryDialog/73.25.1367.875@73.25.1367.875" timestamp="1636841522609" />
     <state x="546" y="179" key="com.intellij.openapi.vcs.changes.SpecificFilesViewDialog" timestamp="1636465846554">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="546" y="179" key="com.intellij.openapi.vcs.changes.SpecificFilesViewDialog/0.0.1440.900@0.0.1440.900" timestamp="1636465846554" />
-    <state x="472" y="353" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1636813725415">
+    <state x="472" y="353" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1636906216482">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="472" y="353" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1440.900@0.0.1440.900" timestamp="1636813725415" />
+    <state x="472" y="353" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1440.900@0.0.1440.900" timestamp="1636906216482" />
     <state x="521" y="368" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/73.25.1367.875@73.25.1367.875" timestamp="1636455657780" />
-    <state x="873" y="352" width="567" height="548" key="find.popup" timestamp="1636841260553">
+    <state x="623" y="260" width="624" height="548" key="find.popup" timestamp="1636905924110">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="873" y="352" width="567" height="548" key="find.popup/0.0.1440.900@0.0.1440.900" timestamp="1636841260553" />
-    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup" timestamp="1636827443090">
+    <state x="623" y="260" width="624" height="548" key="find.popup/0.0.1440.900@0.0.1440.900" timestamp="1636905924110" />
+    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup" timestamp="1636871814093">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup/0.0.1440.900@0.0.1440.900" timestamp="1636827443090" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/wp-content/themes/beetroot/template-parts/parts/forms/index.php</url>
-          <line>50</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup/0.0.1440.900@0.0.1440.900" timestamp="1636871814093" />
   </component>
 </project>
