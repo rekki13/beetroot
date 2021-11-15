@@ -17,7 +17,8 @@
 
     &__menu {
       h6 {
-        color: $footer-h6;
+        color: $footer-h6!important;
+        font-family: $font-body;
       }
 
       a {
@@ -25,6 +26,7 @@
         display: block;
         width: 100%;
         height: 100%;
+        font-family: $font-title;
 
         &:hover {
           color: $footer-link!important;

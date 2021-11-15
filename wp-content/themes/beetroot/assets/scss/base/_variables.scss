@@ -12,10 +12,10 @@ $breakpoints: (
 /**
  * Body
  */
-$font-body                      :   'Roboto', sans-serif;
-$font-title                     :   'Roboto', sans-serif;
-$color-body                     :   #1C3360;
-$color-h                        :   #1C3360;
+$font-body                      :   'Roboto';
+$font-title                     :   'Roboto Light', sans-serif;
+$color-body                     :   #bc204b;
+$color-h                        :   #bc204b;
 $textSize-body                  :   16px;
 $textLineHeight-body            :   27px;
 $backgroundColor-body           :   #fff;
@@ -75,6 +75,7 @@ $color-link                     :   #1C3360;
 $color-black : #000;
 $color-footer: #3d3935;
 $color-pink :#bc204b;
+$color-pink-light:#eedee0;
 $color-gray: #948c85;
 $color-yellow: #f1b828;
 $color-dark-gray:#989693;

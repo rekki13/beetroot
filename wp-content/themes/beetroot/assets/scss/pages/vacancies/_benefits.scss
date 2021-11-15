@@ -26,16 +26,23 @@
 
 
       .col {
-        @include media(sm) {
-          &:first-child{
+
+        &:first-child {
+          @include media(sm) {
+
             width: 30%;
 
           }
-          &:nth-child(2){
-            width: 70%!important;
+        }
+
+        &:nth-child(2) {
+          font-family: $font-title;
+          @include media(sm) {
+            width: 70% !important;
 
           }
         }
+
       }
     }
 

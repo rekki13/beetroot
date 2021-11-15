@@ -1,10 +1,14 @@
 
 .vacancy__position {
+
   .form {
 
     &-group {
-      flex: 1 0 100%;
 
+      @include media(sm) {
+        flex: 1 0 100%;
+
+      }
       .row {
         @include media(sm) {
           flex-direction: column;

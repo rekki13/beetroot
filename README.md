@@ -8,16 +8,17 @@
 
 Test task from the company Beetroot
 
-## Description
+## Task Description
+
 
 ###General: 
-track development time
+>track development time
 use git to split your code into commits
 provide a link to the live version of the site and access to the WP Dashboard
 
 
 ###Markup:
-the layout should be fully responsive and pixelperfect (at the same resolution as the design)
+>the layout should be fully responsive and pixelperfect (at the same resolution as the design)
 use SASS/SCSS and Gulp/Webpack for building assets
 using the BEM methodology will be a plus
 any popular framework/library can be used (Foundation, Bootstrap, etc)
@@ -27,7 +28,7 @@ must be provided accessibility (keyboard navigation through elements, form field
 
 
 ###JS:
-use ES6 syntax in JS files
+>use ES6 syntax in JS files
 use AJAX for sorting items on the main page ("Join The Team" section)
 implement filters by technology, department, location and search query
 using one of the JS frameworks (React/Angular/Vue/Svelte) will be a bonus
@@ -40,14 +41,13 @@ write a class with static methods for your custom functions
 
 
 ###Don't implement:
-switching languages functionality (header) 
+>switching languages functionality (header) 
 success stories quote (single vacancy page) 
 adding files from dropbox and google-drive in the “apply” form (single vacancy page) 
 other internal pages
 
 ## Copyright
-
-<a href="https://dan.lavron.info/">ReKKi</a> Beetroot task
+[ReKKi](https://dan.lavron.info) Beetroot task
 
 ## Changelog
 

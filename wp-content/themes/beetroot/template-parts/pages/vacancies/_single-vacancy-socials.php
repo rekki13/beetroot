@@ -21,10 +21,10 @@ $alt_color=$field['alternative_colors'];
         <div class="row justify-content-center socials">
             <div class="col-10 ">
                 <div class="row row__socials justify-content-between">
-                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-9 col-xl-9 col-xxl-9 socials__left ">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-8 col-xl-8 col-xxl-8 socials__left ">
                         <h2><?= $title ?></h2>
                     </div>
-                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-3 col-xl-3 col-xxl-3 socials__right ">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 col-xxl-4 socials__right ">
                         <ul class="list-group list-group-horizontal justify-content-between h-100 <?=$alt_color?'alt-colors':'regular-colors'?>">
 							<?php
 							if ( $socials_checkbox ):

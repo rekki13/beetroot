@@ -28,9 +28,9 @@ $icon_quote = get_stylesheet_directory() . '/assets/images/icons/e-quote.svg';
                 </div>
 			<?php endif; ?>
             <div class="col-sm-10 col-md-8">
-                <div class="profile">
-                    <h4 class="cust-name"><?= $name ?></h4>
-                    <p class="cust-profession m-0"><?= $position ?></p>
+                <div class="testimonial__user">
+                    <h4 class="testimonial__user-name"><?= $name ?></h4>
+                    <p class="testimonial__user-location m-0"><?= $position ?></p>
                     <a href="#"><?= __( 'Read the story ' ) ?><i
                                 class="icon icon-arrow d-inline-block"><?= file_get_contents( $icon_arrow ) ?></i></a>
                 </div>

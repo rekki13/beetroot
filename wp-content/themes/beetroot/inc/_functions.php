@@ -117,7 +117,7 @@ add_action( 'wp_default_scripts', 'change_wp_version', 10 );
 /**
  * Register widget area.
  *
- * @since SPG 1.0
+ * @since Beetroot 1.0
  *
  * @link  https://codex.wordpress.org/Function_Reference/register_sidebar
  */
@@ -314,7 +314,7 @@ function vb_filter_posts_mt() {
 	$vacancy_count = wp_count_posts($qry->query_vars['post_type']);
 	$rekki_view = ( $_POST['params']['rekkiView'] ); // 12345
 	if ( $qry->have_posts() ) :
-		echo( $rekki_view == 'grid' ? '<div class="row align-items-stretch">' : '<div class="table-responsive"><table class="table"> <thead><tr><th scope="col">'.$vacancy_count->publish.' opening</th><th scope="col">Department</th><th scope="col">Location</th><th scope="col">Tags</th><th scope="col">Client</th></tr> </thead>' );
+		echo( $rekki_view == 'grid' ? '<div class="row align-items-stretch">' : '<div class="table-responsive"><table class="table"> <thead><tr><th scope="col">'.$vacancy_count->publish.' openings</th><th scope="col">Department</th><th scope="col">Location</th><th scope="col">Tags</th><th scope="col">Client</th></tr> </thead>' );
 		while ( $qry->have_posts() ) : $qry->the_post();
 
 			?>

@@ -106,7 +106,9 @@
       border:1px solid $border-pink;
       background: transparent;
       a{
-        color: $color-pink;
+        display: block;
+        width: fit-content;
+        color: $color-pink!important;;
 
       }
     }

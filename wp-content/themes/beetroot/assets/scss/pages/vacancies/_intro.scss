@@ -17,10 +17,14 @@
       }
 
       &_1 {
+
         a {
+
           background: $background-pink;
           color: white!important;
           border-radius: 30px;
+          display: block;
+          width: fit-content;
           @include media(sm) {
 
             width: 100%;
@@ -36,6 +40,7 @@
       }
 
       &_2 {
+        color: #74716d!important;
         @include media(sm) {
           order: 3;
           text-align: center;

@@ -34,17 +34,17 @@ $customer_logo     = $field['customer_logo'];
 
                     <h1><?= the_title() ?></h1>
                     <p><?= the_content() ?></p>
-                    <div class="col col_2">
+                    <div class="col col_1 my-2 d-flex align-items-center">
                         <a href="<?= $button_text['url'] ?>"
-                           class="link-info"><?= $button_text['title'] ?></a>
+                           class="link-info px-3 py-2"><?= $button_text['title'] ?></a>
 
 
                     </div>
-                    <div class="col col_2">
+                    <div class="col col_2 my-2 ">
 						<?php
 						if ( $location_taxonomy ):
 
-							echo( '<span class="d-flex align-items-center">' );
+							echo( '<span class="d-flex align-self-center align-items-center">' );
 							foreach ( $location_taxonomy as $location ):
 								$location_name = $location->name;
 								echo $location_name;
@@ -55,7 +55,7 @@ $customer_logo     = $field['customer_logo'];
 						endif;
 						?>
                     </div>
-                    <div class="col col_3">
+                    <div class="col col_3 my-2 ">
 						<?php
 
 						if ( $language_taxonomy ):
@@ -110,7 +110,7 @@ $customer_logo     = $field['customer_logo'];
 						endif;
 						?>
                     </div>
-                    <div class="col col_4"><?php if ( $customer_logo ): ?><img
+                    <div class="col col_4 my-2 d-flex align-items-center"><?php if ( $customer_logo ): ?><img
                             src=" <?= $customer_logo['url'] ?>"
                             alt=" <?= $customer_logo['alt'] ?>">
 						<?php endif ?></div>

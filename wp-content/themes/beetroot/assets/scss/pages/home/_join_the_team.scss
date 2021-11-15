@@ -27,7 +27,7 @@
 
           &:hover {
             background: $background-pink;
-            color: white;
+            color: white!important;
             opacity: 1;
           }
         }
@@ -212,10 +212,12 @@
             border-radius: 30px;
             border: $border-light_gray solid 1px !important;
             background-color: #f4f4f1;
+
             a {
               color: $color-filter !important;
 
             }
+
             @include media(sm) {
               margin: 2% 0;
             }
@@ -238,6 +240,8 @@
       table {
         thead {
           th {
+            font-family: $font-body;
+            font-weight: 400;
             color: $color-dark-gray;
             text-transform: uppercase;
           }
@@ -260,6 +264,30 @@
               display: block;
             }
           }
+
+          th {
+
+            .mark-hot {
+              border-radius: 30px;
+              background: $color-pink-light;
+              color: $color-pink;
+            }
+          }
+
+          .vacancy__td {
+            &-title {
+              h6 {
+                font-family: $font-body;
+                color: #4f4c48 !important;
+              }
+
+            }
+
+            &-department, &-location {
+              font-family: $font-title;
+
+            }
+          }
         }
       }
     }
@@ -270,9 +298,12 @@
     .details {
       display: none;
     }
+
     .locations {
       transition: all .5s;
+      color: #8b8886!important;
     }
+
     &:hover {
       .locations {
         transition: all .5s;
@@ -292,6 +323,21 @@
     .wrapper {
       @include media(sm) {
         border-radius: 10% !important;
+      }
+    }
+
+    &__header {
+      h6 {
+        color: #3d3935 !important;
+        font-family: $font-body;
+      }
+    }
+
+    &__body {
+      p {
+        font-family: $font-title;
+
+        color: #777471;
       }
     }
 
