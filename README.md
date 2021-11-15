@@ -61,5 +61,5 @@ Date: November 14, 2021
 * Create adaptive responsive pages
 
 ### 2.0
-Initial release
-* Finish task: 
+Date: November 15, 2021
+* Finish task
