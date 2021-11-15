@@ -17,7 +17,7 @@ $locations_terms = get_terms( [
 ] );
 ?>
 
-<!-- Home Rise -->
+<!-- Home Intro -->
 <section class="home__intro vacancies section">
 
     <!-- container -->
@@ -33,4 +33,4 @@ $locations_terms = get_terms( [
     <!-- end container -->
 
 </section>
-<!-- End Home Slider -->
+<!-- End Home Intro -->

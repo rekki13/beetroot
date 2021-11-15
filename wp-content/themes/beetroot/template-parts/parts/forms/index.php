@@ -1,8 +1,5 @@
 <?php
 
-// Check value exists.
-
-// Check value exists.
 $i = 0;
 
 if ( have_rows( 'content', get_the_ID() ) ):
@@ -17,7 +14,6 @@ if ( have_rows( 'content', get_the_ID() ) ):
 			if ( get_row_layout() == 'position' ):
 				$form = get_sub_field( 'form_content' );
 				echo( '<div class="row mb-4">' );
-//				print_r($form);
 				foreach ( $form as $items ):
 
 					$params = [

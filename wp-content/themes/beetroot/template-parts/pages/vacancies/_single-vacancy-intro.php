@@ -17,11 +17,10 @@ $id                = get_the_ID();
 $language_taxonomy = get_the_terms( $id, 'languages' );
 $location_taxonomy = get_the_terms( $id, 'locations' );
 $customer_logo     = $field['customer_logo'];
-//print_r($button_text);
 
 ?>
 
-<!-- Home Rise -->
+<!-- Home Intro -->
 <section class="vacancy__intro section">
 
     <!-- container -->
@@ -125,4 +124,4 @@ $customer_logo     = $field['customer_logo'];
     <!-- end container -->
 
 </section>
-<!-- End Home Slider -->
+<!-- End Home Intro -->

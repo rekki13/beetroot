@@ -181,17 +181,11 @@ const Vacancies = function () {
                                     $status.html(data.message);
                                 }
 
-                                /*console.log(data);
-                                console.log(textStatus);
-                                console.log(XMLHttpRequest);*/
+
                             },
                             error: function (MLHttpRequest, textStatus, errorThrown) {
 
                                 $status.html(textStatus);
-
-                                /*console.log(MLHttpRequest);
-                                console.log(textStatus);
-                                console.log(errorThrown);*/
                             },
                             complete: function (data, textStatus) {
 
@@ -202,9 +196,6 @@ const Vacancies = function () {
                                 }
 
                                 $status.html(msg);
-
-                                /*console.log(data);
-                                console.log(textStatus);*/
                             }
                         });
                     }

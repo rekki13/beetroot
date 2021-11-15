@@ -413,7 +413,6 @@ function vb_filter_posts_mt_sc( $atts ) {
 		'per_page' => - 1,
 		// How many posts per page,
 		'pager'    => 'pager'
-		// 'pager' to use numbered pagination || 'infscr' to use infinite scroll
 	), $atts );
 
 	$result = null;

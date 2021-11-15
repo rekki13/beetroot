@@ -13,7 +13,7 @@ $field       = get_query_var( 'vacancies_field' );
 $title       = $field['title'];
 $input_forms = $field['input_forms'];
 ?>
-<!-- Home Benefits -->
+<!-- Home Position -->
 <section class="vacancy__position section">
     <!-- container -->
     <div class="container">
@@ -31,4 +31,6 @@ $input_forms = $field['input_forms'];
     </div>
     <!-- end container -->
 
+
 </section>
+<!-- End Home Position -->

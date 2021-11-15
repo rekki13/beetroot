@@ -7,14 +7,14 @@ defined( 'ABSPATH' ) || exit;
 /**
  * Fields
  */
-$field = get_query_var( 'vacancies_field' );;
+$field = get_query_var( 'vacancies_field' );
 $text                = $field['text'];
 $testimonials_enable = $field['add_testimonials'];
 $repeater_item       = $field['repeater'];
 $testimonials_array  = $field['choose_testimonial'];
 ?>
 
-<!-- Home Rise -->
+<!-- Home Privilege -->
 <section class="vacancy__privilege section">
 
     <!-- container -->
@@ -79,3 +79,4 @@ $testimonials_array  = $field['choose_testimonial'];
     <!-- end container -->
 
 </section>
+<!-- End Home Privilege -->
