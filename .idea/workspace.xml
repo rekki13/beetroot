@@ -1,9 +1,66 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="90ffef3f-5a87-4b97-9767-8d558575fe14" name="Default Changelist" comment="">
+    <list default="true" id="90ffef3f-5a87-4b97-9767-8d558575fe14" name="Default Changelist" comment="Readme">
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/beetroot/assets/css/fonts/roboto/Roboto-Black.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/beetroot/assets/css/fonts/roboto/Roboto-Black.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/beetroot/assets/css/fonts/roboto/Roboto-Black.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/beetroot/assets/css/fonts/roboto/Roboto-Black.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/beetroot/assets/css/fonts/roboto/Roboto-BlackItalic.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/beetroot/assets/css/fonts/roboto/Roboto-BlackItalic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/beetroot/assets/css/fonts/roboto/Roboto-BlackItalic.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/beetroot/assets/css/fonts/roboto/Roboto-BlackItalic.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/beetroot/assets/css/fonts/roboto/Roboto-Bold.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/beetroot/assets/css/fonts/roboto/Roboto-Bold.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/beetroot/assets/css/fonts/roboto/Roboto-Bold.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/beetroot/assets/css/fonts/roboto/Roboto-Bold.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/beetroot/assets/css/fonts/roboto/Roboto-BoldItalic.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/beetroot/assets/css/fonts/roboto/Roboto-BoldItalic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/beetroot/assets/css/fonts/roboto/Roboto-BoldItalic.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/beetroot/assets/css/fonts/roboto/Roboto-BoldItalic.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/beetroot/assets/css/fonts/roboto/Roboto-Italic.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/beetroot/assets/css/fonts/roboto/Roboto-Italic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/beetroot/assets/css/fonts/roboto/Roboto-Italic.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/beetroot/assets/css/fonts/roboto/Roboto-Italic.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/beetroot/assets/css/fonts/roboto/Roboto-Light.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/beetroot/assets/css/fonts/roboto/Roboto-Light.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/beetroot/assets/css/fonts/roboto/Roboto-Light.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/beetroot/assets/css/fonts/roboto/Roboto-Light.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/beetroot/assets/css/fonts/roboto/Roboto-LightItalic.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/beetroot/assets/css/fonts/roboto/Roboto-LightItalic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/beetroot/assets/css/fonts/roboto/Roboto-LightItalic.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/beetroot/assets/css/fonts/roboto/Roboto-LightItalic.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/beetroot/assets/css/fonts/roboto/Roboto-Medium.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/beetroot/assets/css/fonts/roboto/Roboto-Medium.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/beetroot/assets/css/fonts/roboto/Roboto-Medium.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/beetroot/assets/css/fonts/roboto/Roboto-Medium.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/beetroot/assets/css/fonts/roboto/Roboto-MediumItalic.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/beetroot/assets/css/fonts/roboto/Roboto-MediumItalic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/beetroot/assets/css/fonts/roboto/Roboto-MediumItalic.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/beetroot/assets/css/fonts/roboto/Roboto-MediumItalic.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/beetroot/assets/css/fonts/roboto/Roboto-Regular.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/beetroot/assets/css/fonts/roboto/Roboto-Regular.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/beetroot/assets/css/fonts/roboto/Roboto-Regular.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/beetroot/assets/css/fonts/roboto/Roboto-Regular.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/beetroot/assets/css/fonts/roboto/Roboto-Thin.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/beetroot/assets/css/fonts/roboto/Roboto-Thin.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/beetroot/assets/css/fonts/roboto/Roboto-Thin.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/beetroot/assets/css/fonts/roboto/Roboto-Thin.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/beetroot/assets/css/fonts/roboto/Roboto-ThinItalic.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/beetroot/assets/css/fonts/roboto/Roboto-ThinItalic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/beetroot/assets/css/fonts/roboto/Roboto-ThinItalic.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/beetroot/assets/css/fonts/roboto/Roboto-ThinItalic.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/beetroot/assets/css/fonts/roboto/stylesheet.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/beetroot/inc/_custom-footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/beetroot/inc/_custom-footer.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/beetroot/inc/_custom-header.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/beetroot/inc/_custom-header.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/beetroot/inc/_functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/beetroot/inc/_functions.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/beetroot/inc/_script-style.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/beetroot/inc/_script-style.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/beetroot/inc/_widgets.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/beetroot/inc/_widgets.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/beetroot/inc/post-types.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/beetroot/inc/post-types.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/beetroot/inc/sidebar.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/beetroot/inc/sidebar.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/beetroot/inc/template-functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/beetroot/inc/template-functions.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/beetroot/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/beetroot/package-lock.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,6 +97,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="true" />
@@ -51,18 +109,18 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/wp-content/themes/beetroot" />
-      <recent name="$PROJECT_DIR$/wp-content/themes/beetroot/assets/images/icons" />
-      <recent name="$PROJECT_DIR$/wp-content/themes/beetroot/inc" />
-      <recent name="$PROJECT_DIR$/wp-content/themes/beetroot/template-parts/pages/home" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/wp-content/themes/beetroot/assets/css/fonts" />
       <recent name="$PROJECT_DIR$/wp-content/themes/beetroot/assets/scss/pages/vacancies" />
       <recent name="$PROJECT_DIR$/wp-content/themes/beetroot/assets/scss/pages/home" />
       <recent name="$PROJECT_DIR$/wp-content/themes/beetroot/assets/scss/pages/Новая папка" />
       <recent name="$PROJECT_DIR$/wp-content/themes/beetroot/template-parts/pages/vacancies" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/wp-content/themes/beetroot" />
+      <recent name="$PROJECT_DIR$/wp-content/themes/beetroot/assets/images/icons" />
+      <recent name="$PROJECT_DIR$/wp-content/themes/beetroot/inc" />
+      <recent name="$PROJECT_DIR$/wp-content/themes/beetroot/template-parts/pages/home" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -82,7 +140,9 @@
       <workItem from="1636633604994" duration="3879000" />
       <workItem from="1636639315852" duration="47178000" />
       <workItem from="1636798211448" duration="91442000" />
-      <workItem from="1636927836268" duration="8723000" />
+      <workItem from="1636927836268" duration="9349000" />
+      <workItem from="1637259801098" duration="1595000" />
+      <workItem from="1637568869061" duration="588000" />
     </task>
     <task id="LOCAL-00001" summary="created pro">
       <created>1636465663388</created>
@@ -175,7 +235,14 @@
       <option name="project" value="LOCAL" />
       <updated>1636962229035</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Readme">
+      <created>1636964963509</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1636964963509</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -185,6 +252,7 @@
     <option name="UPDATE_COPYRIGHT" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="created pro" />
     <MESSAGE value="created project and some settings" />
     <MESSAGE value="Create home page almost full" />
@@ -196,7 +264,8 @@
     <MESSAGE value="README.md" />
     <MESSAGE value="fix style,responsive,added fonts" />
     <MESSAGE value="Clear files" />
-    <option name="LAST_COMMIT_MESSAGE" value="Clear files" />
+    <MESSAGE value="Readme" />
+    <option name="LAST_COMMIT_MESSAGE" value="Readme" />
   </component>
   <component name="WindowStateProjectService">
     <state x="184" y="109" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1636720899608">
@@ -207,10 +276,10 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="467" y="309" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1440.900@0.0.1440.900" timestamp="1636622407366" />
-    <state x="292" y="25" key="CommitChangelistDialog2" timestamp="1636962228243">
+    <state x="292" y="25" key="CommitChangelistDialog2" timestamp="1637261006416">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="292" y="25" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1636962228243" />
+    <state x="292" y="25" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1637261006416" />
     <state x="150" y="78" key="DiffContextDialog" timestamp="1636728736739">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
@@ -239,10 +308,10 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="229" y="86" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1636561131588" />
-    <state x="320" y="187" key="Vcs.Push.Dialog.v2" timestamp="1636962269114">
+    <state x="320" y="187" key="Vcs.Push.Dialog.v2" timestamp="1636964967136">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="320" y="187" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1636962269114" />
+    <state x="320" y="187" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1636964967136" />
     <state x="28" y="77" width="1307" height="720" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1636539153739">
       <screen x="0" y="0" width="1440" height="900" />
     </state>

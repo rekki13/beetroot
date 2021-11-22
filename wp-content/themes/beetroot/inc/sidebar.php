@@ -2,8 +2,6 @@
 function beetroot_register_widgets() {
 	register_widget( 'My_Widget' );
 
-
-
 	register_sidebar(
 		array(
 			'name'          => esc_html__( 'Sidebar', 'beetroot' ),
@@ -37,8 +35,8 @@ function beetroot_register_widgets() {
 		'after_widget'   =>'',
 		'before_title'  => '<h6 class="widget-title">',
 		'after_title'    => "</h6>\n",
-		'before_sidebar' => '', // WP 5.6
-		'after_sidebar'  => '', // WP 5.6
+		'before_sidebar' => '',
+		'after_sidebar'  => '',
 	) );
 
 	register_sidebar( array(
@@ -50,8 +48,8 @@ function beetroot_register_widgets() {
 		'after_widget'   =>'',
 		'before_title'  => '<h6 class="widget-title">',
 		'after_title'    => "</h6>\n",
-		'before_sidebar' => '', // WP 5.6
-		'after_sidebar'  => '', // WP 5.6
+		'before_sidebar' => '',
+		'after_sidebar'  => '',
 	) );register_sidebar( array(
 		'name'           => sprintf( __( 'Footer Fourth' ),$i ),
 		'id'             => "beetroot-footer-fourth",
@@ -61,7 +59,7 @@ function beetroot_register_widgets() {
 		'after_widget'   =>'',
 		'before_title'  => '<h6 class="widget-title">',
 		'after_title'    => "</h6>\n",
-		'before_sidebar' => '', // WP 5.6
-		'after_sidebar'  => '', // WP 5.6
+		'before_sidebar' => '',
+		'after_sidebar'  => '',
 	) );
 }

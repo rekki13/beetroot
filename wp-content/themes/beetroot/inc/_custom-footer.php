@@ -11,8 +11,6 @@ function beetroot_footer_TagFooterOpen() {
 
 	<?php
 }
-
-;
 /**
  * @beetroot_footer_TagFooterInner
  */
@@ -43,7 +41,6 @@ function beetroot_footer_TagFooterInner() {
 					?>
                 </div>
             </div>
-            <!-- container -->
 			<?php
 			if ( function_exists( 'dynamic_sidebar' )
 			     && is_active_sidebar( 'beetroot-footer-fourth' )
@@ -57,10 +54,6 @@ function beetroot_footer_TagFooterInner() {
 			<?php endif ?>
 
         </div>
-        <!-- end left -->
-        <!-- end container -->
-
-        <!-- end container -->
 
     </div>
 	<?php

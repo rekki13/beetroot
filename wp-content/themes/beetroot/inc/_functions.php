@@ -265,7 +265,6 @@ function vb_filter_posts_mt() {
 	$pager   = isset( $_POST['pager'] ) ? $_POST['pager'] : 'pager';
 	$tax_qry = [ 'language', 'locations' ];
 	$msg     = '';
-//	$rekkiGridView =  $_POST['params']['rekkiView'] ;
 	/**
 	 * Check if term exists
 	 */
@@ -380,38 +379,24 @@ function vb_filter_posts_mt_sc( $atts ) {
 
 	$a = shortcode_atts( array(
 		'tax'      => 'languages',
-		// Taxonomy
 		'terms'    => false,
-		// Get specific taxonomy terms only
 		'active'   => false,
-		// Set active term by ID
 		'per_page' => - 1,
-		// How many posts per page,
 		'pager'    => 'pager',
-		// 'pager' to use numbered pagination || 'infscr' to use infinite scroll
 	), $atts );
 
 	$b = shortcode_atts( array(
 		'tax'      => 'locations',
-		// Taxonomy
 		'terms'    => false,
-		// Get specific taxonomy terms only
 		'active'   => false,
-		// Set active term by ID
 		'per_page' => - 1,
-		// How many posts per page,
 		'pager'    => 'pager',
 
-		// 'pager' to use numbered pagination || 'infscr' to use infinite scroll
 	), $atts );$c = shortcode_atts( array(
 		'tax'      => 'departments',
-		// Taxonomy
 		'terms'    => false,
-		// Get specific taxonomy terms only
 		'active'   => false,
-		// Set active term by ID
 		'per_page' => - 1,
-		// How many posts per page,
 		'pager'    => 'pager'
 	), $atts );
 

@@ -5,7 +5,7 @@ class My_Widget extends WP_Widget {
 	function __construct() {
 
 		parent::__construct(
-			'rekki_social_media', // ID виджета, если не указать (оставить ''), то ID будет равен названию класса в нижнем регистре: my_widget
+			'rekki_social_media',
 			'Beetroot Socials',
 			array('description' => 'Socials')
 		);

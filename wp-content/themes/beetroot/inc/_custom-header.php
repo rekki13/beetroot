@@ -35,7 +35,7 @@ function beetroot_header_TagHeaderInner() {
             <div id="topnavbar" class="collapse navbar-collapse">
                 <div class="wrapper">
 					<?php
-					/*
+					/**
 					 * Args Nav Menu
 					 */
 					$args = array(
@@ -58,7 +58,6 @@ function beetroot_header_TagHeaderInner() {
 	<?php
 }
 
-;
 /**
  * @beetroot_header_TagHeaderClose
  */
@@ -67,7 +66,6 @@ function beetroot_header_TagHeaderClose() {
 	?>
     </div>
     </div>
-    <!-- END HEADER -->
 	<?php
 }
 
